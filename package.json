@@ -1,0 +1,31 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "watch:eleventy": "eleventy --serve",
+    "watch:tailwind": "tailwindcss -i src/styles/site.css -o _tmp/site.css --watch",
+    "start": "npm-run-all --parallel watch:*",
+    "build": "NODE_ENV=production tailwindcss -i src/styles/tailwind.css -o _tmp/site.css --minify && ELEVENTY_PRODUCTION=true eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tamizhvendan/personal-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tamizhvendan/personal-website/issues"
+  },
+  "homepage": "https://github.com/tamizhvendan/personal-website#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.2.0",
+    "@tailwindcss/typography": "^0.5.8",
+    "html-minifier": "^4.0.0",
+    "moment": "^2.29.4",
+    "npm-run-all": "^4.1.5",
+    "tailwindcss": "^3.2.4"
+  }
+}

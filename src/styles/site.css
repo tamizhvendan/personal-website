@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  /* Theming */
+  :root {
+    --font-display: 'Open Sans';
+    --font-body: 'Figtree';
+    --font-mono: 'IBM Plex Mono';
+  }
+
+  /* Style Overrides */
+  code[class*="language-"],
+  pre[class*="language-"] {
+    @apply font-mono text-sm lg:text-base
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-semibold
+  }
+
+  h1 {
+    @apply text-4xl
+  }
+  h2 {
+    @apply text-3xl
+  }
+  h3 {
+    @apply text-2xl
+  }
+  h4 {
+    @apply text-xl
+  }
+
+  .prose > h2 {
+    @apply font-semibold text-3xl
+  }
+
+  .prose > ol > li {
+    @apply my-0
+  }
+}
