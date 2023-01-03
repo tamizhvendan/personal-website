@@ -1,14 +1,17 @@
 ---
 layout: base
-myOtherData: hello
 ---
 <article class="">
   <div class="max-w-2xl">
     <h1 class="font-display font-semibold text-center leading-normal">{{title}}</h1>
     <div class="flex space-x-1 text-sm mt-3 items-center justify-center w-full opacity-70">
       <dt>Published on</dt>
-      <dd class="">
+      <dd>
         <time datetime="{{ date | dateIso }}">{{ date | dateReadable }}</time>
+      </dd>
+      <dt class="sr-only">Read Time</dt>
+      <dd>
+        <span> · {{ content | timeToRead }} read </span>
       </dd>
     </div>
   </div>

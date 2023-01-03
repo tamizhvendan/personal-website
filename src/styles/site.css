@@ -41,4 +41,8 @@
   .prose > ol > li {
     @apply my-0
   }
+
+  .prose code {
+    @apply font-normal
+  }
 }

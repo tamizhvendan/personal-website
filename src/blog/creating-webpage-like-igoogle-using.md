@@ -12,7 +12,7 @@ I hope you are aware of the following stuffs which are the building blocks of th
 2. CSS
 3. jQuery
   
-Let us design the page using “Divide and Conquer” Approach. The tasks involved are
+Let us design the page using the **Divide and Conquer** Approach. The tasks involved are
 
 1. Defining the webpage layout using HTML
 2. Style the webpage and Widgets(Sample iGoogle Mock up Widgets) using CSS
@@ -31,11 +31,11 @@ The HTML is very straight forward. Entire webpage contents have been placed insi
   <div class="Widget">
   <br />
   <div class="WidgetHeader PurpleWidgetHeader">
-    <br />
-    Widget 1</div>
+  <br />
+  Widget 1</div>
   <br />
   <div class="WidgetBody">
-    <br />
+  <br />
   </div>
   <br />
   </div>
@@ -43,11 +43,11 @@ The HTML is very straight forward. Entire webpage contents have been placed insi
   <div class="Widget">
   <br />
   <div class="WidgetHeader GreenWidgetHeader">
-    <br />
-    Widget 2</div>
+  <br />
+  Widget 2</div>
   <br />
   <div class="WidgetBody">
-    <br />
+  <br />
   </div>
   <br />
   </div>
@@ -55,11 +55,11 @@ The HTML is very straight forward. Entire webpage contents have been placed insi
   <div class="Widget">
   <br />
   <div class="WidgetHeader GrayWidgetHeader">
-    <br />
-    Widget 3</div>
+  <br />
+  Widget 3</div>
   <br />
   <div class="WidgetBody">
-    <br />
+  <br />
   </div>
   <br />
   </div>
@@ -71,11 +71,11 @@ The HTML is very straight forward. Entire webpage contents have been placed insi
   <div class="Widget">
   <br />
   <div class="WidgetHeader GrayWidgetHeader">
-    <br />
-    Widget 4</div>
+  <br />
+  Widget 4</div>
   <br />
   <div class="WidgetBody">
-    <br />
+  <br />
   </div>
   <br />
   </div>
@@ -87,11 +87,11 @@ The HTML is very straight forward. Entire webpage contents have been placed insi
   <div class="Widget">
   <br />
   <div class="WidgetHeader GreenWidgetHeader">
-    <br />
-    Widget 5</div>
+  <br />
+  Widget 5</div>
   <br />
   <div class="WidgetBody">
-    <br />
+  <br />
   </div>
   <br />
   </div>
@@ -99,11 +99,11 @@ The HTML is very straight forward. Entire webpage contents have been placed insi
   <div class="Widget">
   <br />
   <div class="WidgetHeader GrayWidgetHeader">
-    <br />
-    Widget 6</div>
+  <br />
+  Widget 6</div>
   <br />
   <div class="WidgetBody">
-    <br />
+  <br />
   </div>
   <br />
   </div>
@@ -187,3 +187,41 @@ Now we have the HTML Layout ready. Our next task would be applying style to the 
   right: 5px;
 }
 ```
+
+## Task 3: Add the drag and drop functionality using jQuery
+
+jQuery offers a rich set of functionality which can be implemented by less lines of coding. With jQuery you can **write less and do more**. All you need to refer the jQuery API files in your javascript and make use of the functionality it provides. To implement the drag and drop functionality we need the following jQuery library files which can be downloaded from the locations mentioned in the `src` attribute
+
+```html
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" type="text/javascript"></script>
+<script src="http://jqueryui.com/ui/jquery.ui.core.js" type="text/javascript"></script>
+<script src="http://jqueryui.com/ui/jquery.ui.widget.js" type="text/javascript"></script>
+<script src="http://jqueryui.com/ui/jquery.ui.mouse.js" type="text/javascript"></script>
+<script src="http://jqueryui.com/ui/jquery.ui.sortable.js" type="text/javascript"></script>
+```
+
+Now we have the necessary jQuery libraries to implement the drag and drop functionality and all set for implementing the drag and drop support. Here is the code part which implements the drag and drop functionality.
+
+```js
+$(document).ready(function () {        
+  $("#column1,#column2,#column3").sortable({
+    connectWith: "#column1,#column2,#column3",
+    handle: '.WidgetHeader', opacity: 0.6
+  }); 
+  
+  $("#column1,#column2,#column3").disableSelection();
+});
+```
+
+Yes!! That’s it!! Just three function calls and seven lines of coding!! Now you can drag and drop the widgets and play!!
+
+Well, let me explain the jQuery code
+
+The jQuery UI Sortable plugin makes selected elements sortable by dragging with the mouse. Here in our case the selected elements refer to `column1, column2, colum3` which are the placeholders of the widgets. This sortable plugin has many optional arguments which define how drag and drop should be done.
+
+`connectWith` option allows drag and drop between the columns. i.e., Elements (Widgets in our case) inside the `column1` or `column2` or `column3` can be dragged and dropped on `column1` or `column2` or `column3`.
+
+“handle” option specifies the element which can be used to drag the widget between the columns. “opacity” option defines the transparency of the widget while dragging. The the `disableSelection()` function disable text selection in a widget which often occur while dragging a mouse across a widget ([reference](http://docs.jquery.com/UI/Sortable)). 
+
+## Summary
+To keep the blog post simple, I didn’t implement the persistence of the widget positions. So widgets should not retain its positions when you refresh the page. You can see the source code of this blog post [here](https://gist.github.com/3632472).

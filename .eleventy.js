@@ -4,10 +4,12 @@ const htmlmin = require("html-minifier");
 const moment = require('moment');
 
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const timeToRead = require('eleventy-plugin-time-to-read');
 
 moment.locale('en');
 
 module.exports = function (eleventyConfig) {
+  eleventyConfig.setUseGitIgnore(false)
   eleventyConfig.addWatchTarget('./_tmp/site.css');
 
   eleventyConfig.addPassthroughCopy({ './_tmp/site.css': './assets/styles/site.css' })
@@ -17,6 +19,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addLayoutAlias('blog', 'layouts/blog.njk');
 
   eleventyConfig.addPlugin(syntaxHighlight);
+  eleventyConfig.addPlugin(timeToRead, { style: "short" });
 
   eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
     if (outputPath && outputPath.endsWith(".html")) {
