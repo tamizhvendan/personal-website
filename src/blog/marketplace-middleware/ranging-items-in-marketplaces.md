@@ -181,7 +181,7 @@ To model the unhandled exception while processing a message from OMS, let's add 
 
 With the spec for all the possible events in place, now it's time to implement the message handler for the messages from OMS.
 
-Let's start it from the rewriting message listener that we implemented in the [last blog post](/blog/marketplace-middleware/processing-messages-from-ibmmq-in-clojure.md#consuming-messages-from-ibm-mq-queue">}})
+Let's start it from the rewriting message listener that we implemented in the [last blog post](/blog/marketplace-middleware/processing-messages-from-ibmmq-in-clojure.md#consuming-messages-from-ibm-mq-queue)
 
 ```clojure
 ; src/wheel/infra/oms.clj

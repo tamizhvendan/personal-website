@@ -38,7 +38,7 @@ CREATE TABLE event (
 );
 ```
 
-As we [already configured](/blog/marketplace-middleware/configuring-database-connection-pooling-migration-reloaded-workflow.md#database-migration-using-flyway">}}) flyway to use the `db/migration` directory for the migration files, we can invoke the `migrate-database` function in the *infra/core.clj* in the REPL to migrate the database.
+As we [already configured](/blog/marketplace-middleware/configuring-database-connection-pooling-migration-reloaded-workflow.md#database-migration-using-flyway) flyway to use the `db/migration` directory for the migration files, we can invoke the `migrate-database` function in the *infra/core.clj* in the REPL to migrate the database.
 
 ```bash
 wheel.infra.core=> (migrate-database)
