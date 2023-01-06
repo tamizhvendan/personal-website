@@ -77,11 +77,11 @@ Timbre provides a hook `output-fn`, a function with the signature `(fn [data]) -
                            :event event})))
 ```
 
-<span class="callout">1</span> It destructures the interested keys from the `data` map. 
+<1> It destructures the interested keys from the `data` map. 
 
-<span class="callout">2</span> Timbre use [delay](https://clojuredocs.org/clojure.core/delay) for the logging message. So, here we are retrieving the value using the [force](https://clojuredocs.org/clojure.core/force) function and then uses [read-string](https://clojuredocs.org/clojure.core/read-string) to convert the `string` to its corresponding Clojure data structure.
+<2> Timbre use [delay](https://clojuredocs.org/clojure.core/delay) for the logging message. So, here we are retrieving the value using the [force](https://clojuredocs.org/clojure.core/force) function and then uses [read-string](https://clojuredocs.org/clojure.core/read-string) to convert the `string` to its corresponding Clojure data structure.
 
-<span class="callout">3</span> It generates the stringified JSON representation of the log entry containing the log level, timestamp and the actual message. 
+<3> It generates the stringified JSON representation of the log entry containing the log level, timestamp and the actual message. 
 
 To wire this function with Timbre, we are going to make use of its `merge-config!` function.
 
@@ -155,9 +155,9 @@ Let's get started by creating a new file *event.clj* and add the spec for the in
 (s/def ::level #{:info :warn :debug :error :fatal})
 ```
 
-<span class="callout">1</span> As the name indicates, the `parent-id` represents the `id` of an event which resulted in the event in question.
+<1> As the name indicates, the `parent-id` represents the `id` of an event which resulted in the event in question.
 
-<span class="callout">2</span> An event name is a namespaced keyword. We'll discuss it more in the upcoming blog posts.
+<2> An event name is a namespaced keyword. We'll discuss it more in the upcoming blog posts.
 
 To model the timestamp of the event, we are going to take advantage of the fact our Client works on IST(+05:30) timezone and all their transactions are on IST. 
 
@@ -272,13 +272,13 @@ Now we have all the individual attributes of an event, and we can define the spe
 (s/def ::event (s/multi-spec event-type :type))
 ```
 
-<span class="callout">1</span> It defines multi-method dispatch based of the `:type` key.
+<1> It defines multi-method dispatch based of the `:type` key.
 
-<span class="callout">2</span> It defines the `:system` event spec.
+<2> It defines the `:system` event spec.
 
-<span class="callout">3</span> It defines the `:domain` event spec.
+<3> It defines the `:domain` event spec.
 
-<span class="callout">4</span> It defines the default event spec which requires an event map with a `:type` key and conforms to the `::type` spec.
+<4> It defines the default event spec which requires an event map with a `:type` key and conforms to the `::type` spec.
 
 Let's verify the spec in the REPL
 
@@ -330,11 +330,11 @@ We are going to add a function `write!` in the *log.clj* file that takes an `eve
     :fatal (timbre/fatal event)))
 ```
 
-<span class="callout">1</span>It destructures the `level` from the `event` and also keeps the `event`
+<1>It destructures the `level` from the `event` and also keeps the `event`
 
-<span class="callout">2</span>It uses the Clojure's function [pre-condition](https://clojure.org/reference/special_forms#_fn_name_param_condition_map_expr_2) to assert the incoming parameter against the `event` spec.
+<2>It uses the Clojure's function [pre-condition](https://clojure.org/reference/special_forms#_fn_name_param_condition_map_expr_2) to assert the incoming parameter against the `event` spec.
 
-<span class="callout">3</span>It invokes the appropriate `log` macros of the Timbre library based on the event's `level`.
+<3>It invokes the appropriate `log` macros of the Timbre library based on the event's `level`.
 
 When we evaluate this `write!` function with a random map, we'll get the following output.
 

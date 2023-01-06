@@ -266,12 +266,13 @@ val withNackJob: (Promise<unit> -> Job<Alt<'x>>) -> Alt<'x>
 
 > `Promise<'a>` is a sub class of `Alt<'a>`, which we'll see in detail in a later blog post
 
-<span class="callout">3</span> Using the `Job.start` function, we are immediately starting the `onNack` job in an another concurrent job
-> ```fsharp
+<3> Using the `Job.start` function, we are immediately starting the `onNack` job in an another concurrent job
+
+```fsharp
 val start: Job<unit> -> Job<unit>
 ```
 
-<span class="callout">4</span> After starting the `onNack` job, we are calling the actual `delayedPrintn` and return its result.
+<4> After starting the `onNack` job, we are calling the actual `delayedPrintn` and return its result.
 
 Let's verify this behaviour with a new set of function.
 

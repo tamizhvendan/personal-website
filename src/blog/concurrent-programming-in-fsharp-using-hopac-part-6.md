@@ -99,12 +99,13 @@ type TimeBomb () =
 <2> The `activatedAlt` will be available when `activated` IVar is populated.
 
 <3> The `notActivatedAlt` is the default state, that'll `always` be available. (Like a default case in a switch statement)
-> ```fsharp
+
+```fsharp
 val always: 'x -> Alt<'x>
 ```
 Creates an alternative that is always available and results in the given value.
 
-<span class="callout">4</span> We are choosing between the above three `Alt`s.
+<4> We are choosing between the above three `Alt`s.
 
 Then we are going to leverage the `Ticker` component we created in the [last blog post](/blog/concurrent-programming-in-fsharp-using-hopac-part-5.mmark" >}}) to send the seconds remaining via `SecondsRemainingCh`.
 

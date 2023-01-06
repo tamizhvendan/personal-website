@@ -209,15 +209,15 @@ Let's start it from the rewriting message listener that we implemented in the [l
 ; ...
 ```
 
-<span class="callout">1</span> & <span class="callout">4</span> The namespace `wheel.middleware.core` doesn't exist yet. We'll be adding it in a  few minutes. This namespace is going to have a function `handle` that takes `oms-message` and performs the required actions in the marketplace. Then it returns a collection of events that represent the results of these actions. Think of this as a router in a web application.
+<1> & <4> The namespace `wheel.middleware.core` doesn't exist yet. We'll be adding it in a  few minutes. This namespace is going to have a function `handle` that takes `oms-message` and performs the required actions in the marketplace. Then it returns a collection of events that represent the results of these actions. Think of this as a router in a web application.
 
-<span class="callout">2</span> The rewritten version of the `message-listener` function now takes two parameters, `message-type` and  `oms-event-name`. These parameters make it generic for processing the different types of messages from OMS.
+<2> The rewritten version of the `message-listener` function now takes two parameters, `message-type` and  `oms-event-name`. These parameters make it generic for processing the different types of messages from OMS.
 
-<span class="callout">3</span> & <span class="callout">7</span> The `oms` and `processing-failed` functions in the `wheel.middleware.event` namespace is also not added yet, and we'll be adding them in the next step. These functions construct an event of type `oms` and `system` with the parameters passed.
+<3> & <7> The `oms` and `processing-failed` functions in the `wheel.middleware.event` namespace is also not added yet, and we'll be adding them in the next step. These functions construct an event of type `oms` and `system` with the parameters passed.
 
-<span class="callout">5</span> We are prepending the `oms-event` with the results from the `handle` functions. This `oms-event` is the parent event that triggered all the other events 
+<5> We are prepending the `oms-event` with the results from the `handle` functions. This `oms-event` is the parent event that triggered all the other events 
 
-<span class="callout">6</span> We are writing all the events in the log using the `write-all!` function that we defined earlier. 
+<6> We are writing all the events in the log using the `write-all!` function that we defined earlier. 
 
 As we have changed the signature of the `message-listener` function, let's update the `ranging-consumer` state that we defined using it.
 
@@ -297,7 +297,7 @@ In the `message-listener` function, we are calling two functions `event/oms` to 
          :level :error))
 ```
 
-<span class="callout">1</span> The `event` function takes the name and payload (without type) of the event along with a set of [keyword arguments](https://clojure.org/guides/destructuring#_keyword_arguments) and constructs a Clojure map that conforms to the `event` spec.
+<1> The `event` function takes the name and payload (without type) of the event along with a set of [keyword arguments](https://clojure.org/guides/destructuring#_keyword_arguments) and constructs a Clojure map that conforms to the `event` spec.
 
 Let's also add the `parsing-failed` function to construct the `parsing-failed` event which we will be using shortly.
 
@@ -365,11 +365,11 @@ This parsed data structure is also needed to be validated using clojure.spec to 
           (s/explain-str (spec oms-msg) parsed-oms-message))]))))
 ```
 
-<span class="callout">1</span> & <span class="callout">2</span> We are defining three multi-methods `xsd-resource-file-path`, `parse` & `spec` to get the XML schema file path in the *resources* directory, parse the XML message to Clojure data structure and to get the expected clojure.spec of the parsed message respectively. The `process` multi-method abstracts the processing of the parsed message from OMS. Each OMS message type (ranging, deranging, etc.) has to have an implementation for these multi-methods. 
+<1> & <2> We are defining three multi-methods `xsd-resource-file-path`, `parse` & `spec` to get the XML schema file path in the *resources* directory, parse the XML message to Clojure data structure and to get the expected clojure.spec of the parsed message respectively. The `process` multi-method abstracts the processing of the parsed message from OMS. Each OMS message type (ranging, deranging, etc.) has to have an implementation for these multi-methods. 
 
-<span class="callout">3</span> The `validate-message` performs the XML schema-based validation of the incoming message. We'll be adding the `wheel.xsd/validate` function shortly.
+<3> The `validate-message` performs the XML schema-based validation of the incoming message. We'll be adding the `wheel.xsd/validate` function shortly.
 
-<span class="callout">4</span> We are dispatching the parsed OMS message to the `process` multimethod.
+<4> We are dispatching the parsed OMS message to the `process` multimethod.
 
 Then add a new file *xsd.clj* and implement the XML validation based on XSD as mentioned in this [stackoverflow answer](https://stackoverflow.com/questions/15732/whats-the-best-way-to-validate-an-xml-file-against-an-xsd-file).
 
@@ -840,7 +840,7 @@ The final piece left is defining the `tata-cliq` implementation of the `process-
   (event/ranging-succeeded id channel-id channel-name items))
 ```
 
-<span class="callout">1</span> The `item` in `tata-cliq` API doesn't have `id` instead it uses `sku`.
+<1> The `item` in `tata-cliq` API doesn't have `id` instead it uses `sku`.
 
 
 ```clojure

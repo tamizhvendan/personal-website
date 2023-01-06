@@ -49,7 +49,7 @@ As the name indicates, the `fillAndRead` is a function fills the given write-onc
 val fill: IVar<'x> -> 'x -> Job<unit>
 ```
 
-<span class="callout">2</span> The `IVar.read` function creates an alternative that becomes available when the write-once variable had a value.
+<2> The `IVar.read` function creates an alternative that becomes available when the write-once variable had a value.
 ```fsharp
 val read: IVar<'x> -> Alt<'x>
 ```

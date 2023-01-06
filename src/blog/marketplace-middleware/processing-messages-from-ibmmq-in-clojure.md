@@ -209,7 +209,7 @@ Then create a new function `message-listener` and `start-consumer` to create the
     consumer))
 ```
 
-<span class="callout">1</span> We are justing printing the received message in this part and we'll be revisiting it soon.
+<1> We are justing printing the received message in this part and we'll be revisiting it soon.
 
 Finally, use these function to define the `mount` state for ranging queue consumer.
 

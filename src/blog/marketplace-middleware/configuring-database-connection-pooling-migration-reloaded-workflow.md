@@ -47,7 +47,7 @@ Then define a mount state `datasource` to manage the life-cycle of the connectio
 ```
 
 
-<span class="callout">1</span> Retrieves the database configuration and creates the datasource object.
+<1> Retrieves the database configuration and creates the datasource object.
 
 Now if we start the application through Mount, we will get the following output.
 
@@ -92,9 +92,9 @@ Then in the `database.clj` file, `import` the `Flyway` namespace and add a new f
       migrate))
 ```
 
-<span class="callout">1</span> Creates an instance of Flyway and setup the configuration using the [dot special form](https://clojure.org/reference/java_interop#_the_dot_special_form)
+<1> Creates an instance of Flyway and setup the configuration using the [dot special form](https://clojure.org/reference/java_interop#_the_dot_special_form)
 
-<span class="callout">2</span> Setting the migration files path to `db/migration`.
+<2> Setting the migration files path to `db/migration`.
 
 This path doesn't exist yet. So, let's create it.
 
@@ -155,11 +155,11 @@ Then define two functions, `start-app` and `migrate-database`, to start the appl
   (mount/stop #'db/datasource)) ; <3>
 ```
 
-<span class="callout">1</span> Invokes Mount's `start` function with that states that we wanted to start. Note that Mount doesn't start the transitive dependent states in this function overload. 
+<1> Invokes Mount's `start` function with that states that we wanted to start. Note that Mount doesn't start the transitive dependent states in this function overload. 
 
-<span class="callout">2</span> Performs the database migration 
+<2> Performs the database migration 
 
-<span class="callout">3</span> Stops the datasource after completing the migration.
+<3> Stops the datasource after completing the migration.
 
 Let's add the `stop-app` function as well to stop the application. 
 
@@ -188,9 +188,9 @@ As a first step, add a Leiningen user profile called `dev` in the 's `project.cl
                    :dependencies [[org.clojure/tools.namespace "0.3.1"]]}}) ; <2>
 ```
 
-<span class="callout">1</span> Adds a new source-path to load the Clojure files from the `dev` directory.
+<1> Adds a new source-path to load the Clojure files from the `dev` directory.
 
-<span class="callout">2</span> Adds a dev dependency [tools.namespace](https://github.com/clojure/tools.namespace) to reload the modified source files interactively. 
+<2> Adds a dev dependency [tools.namespace](https://github.com/clojure/tools.namespace) to reload the modified source files interactively. 
 
 Then, create a new file `user.clj` in the `dev` directory.
 
@@ -207,9 +207,9 @@ Then, create a new file `user.clj` in the `dev` directory.
   (stop-app)
   (repl/refresh :after 'infra/start-app))
 ```
-<span class="callout">1</span> Makes `start-app`, `stop-app` and `migrate-database` function to be available in the `user` namespace.
+<1> Makes `start-app`, `stop-app` and `migrate-database` function to be available in the `user` namespace.
 
-<span class="callout">2</span> Adds a `reset` function, which stops the application and reloads all the modified codes. Using the `:after` parameter, we are informing the `refresh` function to start the app after the reload.
+<2> Adds a `reset` function, which stops the application and reloads all the modified codes. Using the `:after` parameter, we are informing the `refresh` function to start the app after the reload.
 
 To see it in action, stop the current REPL session and start it again. This time profile selection Calva prompt will include the `dev` profile in the list of options. 
 ![](/images/blog/marketplace-middleware/lein-profiles-prompt.png)
