@@ -1,7 +1,7 @@
 ---
 title: "Concurrent Programming in Fsharp Using Hopac - Part 6"
 date: 2018-04-25T21:03:26+05:30
-tags : ["fsharp", "Hopac", "concurrent-programming"]
+tags : ["blog", "programming", "fsharp", "Hopac", "concurrent-programming"]
 ---
 
 Hi there!
@@ -12,7 +12,7 @@ Welcome back to the sixth part of my blog series on concurrent programming in fs
 
 The example that we are going to see is a time bomb simulator. The time bomb transitions through different states as shown below during its lifecycle.
 
-![](/img/fsharp/blog/hopac/timebomb_state_transition.png)
+![](/images/blog/hopac/timebomb_state_transition.png)
 
 The associated fsharp type `TimeBomb` will have the following signature
 

@@ -1,7 +1,7 @@
 ---
 title: "Implementing API Gateway Pattern in fsharp using Hopac"
 date: 2018-03-05T19:16:02+05:30
-tags : ["fsharp", "Hopac", "concurrent-programming"]
+tags : ["blog", "programming", "fsharp", "Hopac", "concurrent-programming"]
 ---
 
 Two years back, I wrote [a blog post](http://blog.tamizhvendan.in/blog/2015/12/29/implementing-api-gateway-in-f-number-using-rx-and-suave/) on how to implement [the API Gateway pattern](https://www.nginx.com/blog/building-microservices-using-an-api-gateway) using [Reactive Extensions](http://reactivex.io/)(Rx). In this third part of concurrent programming in fsharp using Hopac blog series, we are going to revisit that blog post and port it to use Hopac instead of Reactive Extensions.
@@ -21,7 +21,7 @@ Let's get started by spending some time on understanding the problem that we are
 
 Our objective is to write a backend which serves the data for showing a GitHub user profile like below
 
-![](/img/fsharp/blog/hopac/Profile.png)
+![](/images/blog/hopac/Profile.png)
 
 This profile view has three components.
 
@@ -33,7 +33,7 @@ This profile view has three components.
 
 To get these data from GitHub APIs, we need to make five API calls.
 
-![](/img/fsharp/blog/hopac/Profile_With_API_Calls.png)
+![](/images/blog/hopac/Profile_With_API_Calls.png)
 
 > We can use GitHub's [GraphQL API](https://developer.github.com/v4/) to minimise it. As the focus of this blog post is different, we are not going to consider this.
 
@@ -658,7 +658,7 @@ val cts : CancellationTokenSource
 
 We can then verify the API via Curl.
 
-![](/img/fsharp/blog/hopac/api_response.png)
+![](/images/blog/hopac/api_response.png)
 
 Awesome!!
 

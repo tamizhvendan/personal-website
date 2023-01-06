@@ -1,7 +1,7 @@
 ---
 title: "Concurrent Programming in Fsharp Using Hopac - Part 7"
 date: 2018-06-12T05:30:26+05:30
-tags: ["fsharp", "Hopac", "concurrent-programming"]
+tags: ["blog", "programming", "fsharp", "Hopac", "concurrent-programming"]
 ---
 
 Hello there!
@@ -14,7 +14,7 @@ In this blog post, we are going to learn how to port this example using Hopac's 
 
 As defined by Tomas in his blog post, the image processing pipeline works as depicted in the below image.
 
-![](/img/fsharp/blog/hopac/image-processing-pipeline.png)
+![](/images/blog/hopac/image-processing-pipeline.png)
 > Diagram is from the [Parallel Programming with Microsoft
 .NET book](https://books.google.co.in/books/about/PARALLEL_PROGRAMMING_WITH_MICROSOFT_NET.html?id=dL30ygAACAAJ).
 
@@ -36,13 +36,13 @@ We saw how to [leverage Hopac Channels](/blog/concurrent-programming-in-fsharp-u
 
 In communication via Channels, the producer `give` the message to the Channel (`Ch<T>`) and **waits until** a consumer `take` it from the Channel (`Ch<T>`)
 
-![](/img/fsharp/blog/hopac/hopac-ch-mechanism.png)
+![](/images/blog/hopac/hopac-ch-mechanism.png)
 
 In this case, if the consumer is slow in taking up the message from the channel, the producer is blocked.
 
 In Hopac, Bounded Mailbox is similar to Channels except that it introduces a buffer between the producer and the consumer. It also provides [back-pressure](https://ferd.ca/queues-don-t-fix-overload.html) in the form of blocking producers when consumers cannot keep up.
 
-![](/img/fsharp/blog/hopac/bounded_mb_intro.png)
+![](/images/blog/hopac/bounded_mb_intro.png)
 
 With this understanding, let's jump in and put it in action!
 
@@ -193,7 +193,7 @@ The `loadImages` function recursively iterates the given list and `put` each ele
 
 ## The Pipeline
 
-![](/img/fsharp/blog/hopac/pipeline_domino.jpg)
+![](/images/blog/hopac/pipeline_domino.jpg)
 
 Now we have all the essential things; it is time to line them up and get the job done!
 

@@ -1,7 +1,7 @@
 ---
 title: "Model Binding in Suave and Saturn"
 date: 2018-12-17T20:50:23+05:30
-tags: ["fsharp", "suave", "saturn"]
+tags: ['blog', 'programming', "fsharp", "suave"]
 ---
 
 In one of the fsharp project that I was part of in early this year, we encountered an interesting scenario where we need to do serialisation of a fsharp record type from the query string (and multi-part form) in [Suave](https://www.suave.io), and the out of the box model binding support didn't suit our requirements. 
@@ -60,7 +60,7 @@ Let's find a solution to this!
 
 The model binding logic that we wanted to develop should conceptually work like this
 
-![](/img/fsharp/blog/model-binding/model-binding.png)
+![](/images/blog/model-binding-in-suave-and-saturn/model-binding.png)
 
 It takes three input, 
 

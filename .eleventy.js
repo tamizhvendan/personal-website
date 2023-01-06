@@ -3,6 +3,10 @@
 const htmlmin = require("html-minifier");
 const moment = require('moment');
 
+const markdownIt = require('markdown-it')
+const markdownItAnchor = require('markdown-it-anchor')
+var markdownItEmoji = require('markdown-it-emoji');
+
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const timeToRead = require('eleventy-plugin-time-to-read');
 
@@ -18,6 +22,11 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addLayoutAlias('base', 'layouts/base.njk');
   eleventyConfig.addLayoutAlias('blog', 'layouts/blog.njk');
+
+  eleventyConfig.setLibrary(
+    'md',
+    markdownIt().use(markdownItAnchor).use(markdownItEmoji)
+  )
 
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(timeToRead, { style: "short" });

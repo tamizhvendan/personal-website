@@ -1,7 +1,7 @@
 ---
 title: "Concurrent Programming in fsharp using Hopac - Part 4"
 date: 2018-03-16T08:46:01+05:30
-tags : ["fsharp", "Hopac", "concurrent-programming"]
+tags : ["blog", "programming", "fsharp", "Hopac", "concurrent-programming"]
 ---
 
 Hi,
@@ -254,7 +254,8 @@ There is a lot is happening in this short code snippet. So, Let's dissect it.
 <1> We are defining an `onNack` function to specify what to do in the event of a negative acknowledgement. For simplicity we are just printing an abort message.
 
 <2> To make any `Alt<'a>` negative acknowledgement aware, Hopac provides a function called `Alt.withNackJob`.
-> ```fsharp
+
+```fsharp
 val withNackJob: (Promise<unit> -> Job<Alt<'x>>) -> Alt<'x>
 ```
 > The `withNackJob` function creates an alternative that is computed at instantiation time with the given job constructed with a negative acknowledgement alternative.
@@ -308,7 +309,7 @@ From the log that we can assert that we gracefully handled the negative acknowle
 
 Here is my best effort to show what is happening in the `delayedPrintnWithNack` function
 
-![](/img/fsharp/blog/hopac/nack.png)
+![](/images/blog/hopac/nack.png)
 
 ## Summary
 
