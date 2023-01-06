@@ -14,6 +14,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy({ './_tmp/site.css': './assets/styles/site.css' })
   eleventyConfig.addPassthroughCopy("./src/site.webmanifest");
+  eleventyConfig.addPassthroughCopy("./src/images");
 
   eleventyConfig.addLayoutAlias('base', 'layouts/base.njk');
   eleventyConfig.addLayoutAlias('blog', 'layouts/blog.njk');

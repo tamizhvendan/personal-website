@@ -43,6 +43,14 @@
   }
 
   .prose code {
-    @apply font-normal
+    @apply font-normal 
+  }
+  
+  .prose pre {
+    @apply shadow-lg rounded
+  }
+
+  .prose img {
+    @apply shadow-lg rounded
   }
 }
