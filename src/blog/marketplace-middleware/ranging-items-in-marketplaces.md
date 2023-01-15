@@ -1,7 +1,7 @@
 ---
 title: "Ranging Items In E-Commerce Marketplaces"
 date: 2019-10-18T20:58:27+05:30
-tags: ['blog', 'programming', 'clojure']
+tags: ['blog', 'programming', 'clojure', 'functional-programming']
 ---
 
 In this seventh part of the blog series [Building an E-Commerce Marketplace Middleware in Clojure](/blog/marketplace-middleware/intro), I am going to share how we captured a business operation from the client's Order Management System(OMS) processed it in a marketplace. 

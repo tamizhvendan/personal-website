@@ -1,7 +1,7 @@
 ---
 title: "If Your Fsharp Code Compiles It Usually Works"
 date: 2013-08-08
-tags: ['blog', "programming", "fsharp"]
+tags: ['blog', "programming", "fsharp", "functional-programming"]
 ---
 
 When I first started learning fsharp, one of the astounding fact that hit my mind was “If the code compiles it usually works!” For a guy who is coming from C# and Java Programming background it was bit weird! After delving deep into F# I have found it very useful and inspired by its awesomeness. 

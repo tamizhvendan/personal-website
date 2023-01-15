@@ -1,7 +1,7 @@
 ---
 title: Verbs - Buried Abstraction in OO World
 date: 2014-09-26
-tags: ['blog', 'programming', 'csharp']
+tags: ['blog', 'programming', 'csharp', 'functional-programming']
 ---
 
 In Object Oriented Programming, the problem domain is being modeled as objects(nouns) which collaborate with one another in the form of messages(verbs). We are actually creating abstractions and through which we are solving the problems in an organized and cleaner way. But this way of creating abstractions does not scale in all the scenarios.

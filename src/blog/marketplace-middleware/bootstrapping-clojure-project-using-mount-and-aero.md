@@ -1,7 +1,7 @@
 ---
 title: "Bootstrapping Clojure Project Using Mount And Aero"
 date: 2019-07-26T15:39:03+05:30
-tags: ['blog', 'programming', 'clojure']
+tags: ['blog', 'programming', 'clojure', 'functional-programming']
 ---
 
 In this blog post, we are going to focus on bootstrapping the Clojure project using [Mount](https://github.com/tolitius/mount) & [Aero](https://github.com/juxt/aero) and interacting with the application using the REPL.

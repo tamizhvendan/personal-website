@@ -1,7 +1,7 @@
 ---
 title: "Processing Messages From IBM-MQ in Clojure"
 date: 2019-10-10T18:20:27+05:30
-tags: ['blog', 'programming', 'clojure']
+tags: ['blog', 'programming', 'clojure', 'functional-programming']
 ---
 
 The Order Management System(OMS) of our client exposes its operations in the form of messages via [IBM-MQ](https://www.ibm.com/products/mq). In this blog post, we are going to focus on setting up the infrastructure to receive and process these messages in our application. 

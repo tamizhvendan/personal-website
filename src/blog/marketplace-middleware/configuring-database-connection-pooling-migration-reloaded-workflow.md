@@ -1,7 +1,7 @@
 ---
 title: "Configuring Database Connection Pooling, Migration and Reloaded Workflow"
 date: 2019-08-06T21:59:03+05:30
-tags: ['blog', 'programming', 'clojure']
+tags: ['blog', 'programming', 'clojure', 'functional-programming']
 ---
 
 In the [last blog post](/blog/marketplace-middleware/bootstrapping-clojure-project-using-mount-and-aero), we bootstrapped the Clojure project using Mount and Aero. We are going to continue from we left off and configure database connection pooling, migration & Reloaded Workflow in this blog post.

@@ -1,7 +1,7 @@
 ---
 title: "Concurrent Programming in fsharp Using Hopac - Part 5"
 date: 2018-03-20T17:13:48+05:30
-tags : ["blog", "programming", "fsharp", "Hopac", "concurrent-programming"]
+tags : ["blog", "programming", "fsharp", "Hopac", "concurrent-programming", "functional-programming"]
 ---
 
 Hi,

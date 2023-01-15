@@ -1,7 +1,7 @@
 ---
 title: Going Declarative in C#
 date: 2011-11-22
-tags: ['blog', 'programming', 'csharp']
+tags: ['blog', 'programming', 'csharp', "functional-programming"]
 ---
 
 [Declarative programming](http://en.wikipedia.org/wiki/Declarative_programming) is a simpler, more concise way to describe the behavior of a software program than [imperative programming](http://en.wikipedia.org/wiki/Imperative_programming). I am an admirer of declarative aspects of programming ever since I have started writing SQL queries. We always do our best to write code that is easier to read and maintain. Declarative style is one of the proven ways to write clean code. 

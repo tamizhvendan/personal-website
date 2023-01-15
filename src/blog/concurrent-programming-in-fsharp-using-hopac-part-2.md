@@ -1,7 +1,7 @@
 ---
 title: "Concurrent Programming in Fsharp Using Hopac (Part-2)"
 date: 2018-02-28T19:47:02+05:30
-tags : ["blog", "programming", "fsharp", "Hopac", "concurrent-programming"]
+tags : ["blog", "programming", "fsharp", "Hopac", "concurrent-programming", "functional-programming"]
 ---
 
 In the [last blog post](/blog/concurrent-programming-in-fsharp-using-hopac-part-1), we learned the how to create jobs and run them parallelly using [Hopac](https://github.com/hopac/Hopac). In this second part of the blog post series, we are going to explore inter-job communication.
