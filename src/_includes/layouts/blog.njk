@@ -2,7 +2,7 @@
 layout: base
 ---
 <article class="">
-  <div class="max-w-2xl">
+  <div class="">
     <h1 class="text-center leading-normal">{{title}}</h1>
     <div class="flex space-x-1 text-sm mt-3 items-center justify-center w-full opacity-70">
       <dt>Published on</dt>
@@ -15,5 +15,5 @@ layout: base
       </dd>
     </div>
   </div>
-  <div class="mt-6 prose lg:prose-xl">{{ content | safe }}</div>
+  <div class="mt-6 prose lg:prose-xl max-w-none">{{ content | safe }}</div>
 </article>

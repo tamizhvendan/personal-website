@@ -46,9 +46,9 @@ Let's create a fsharp script file `ApiGateway.fsx` and add the following NuGet p
 > touch ApiGateway.fsx
 > forge paket init
 > forge paket add Hopac
-> forge paket add Http.fs // <1>
-> forge paket add System.Net.Http // <2>
-> forge paket add FSharp.Data // <3>
+> forge paket add Http.fs # <1>
+> forge paket add System.Net.Http # <2>
+> forge paket add FSharp.Data # <3>
 ```
 
 <1> [**Http.Fs**](https://github.com/haf/Http.fs) - A simple, functional HTTP client library for F# using Hopac
