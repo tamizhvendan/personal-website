@@ -34,24 +34,8 @@
   h4 {
     @apply text-xl
   }
+}
 
-  .prose > h2 {
-    @apply font-medium text-3xl
-  }
-
-  .prose > ol > li {
-    @apply my-0
-  }
-
-  .prose code {
-    @apply font-normal 
-  }
-  
-  .prose pre {
-    @apply shadow-lg rounded
-  }
-
-  .prose img {
-    @apply shadow-lg rounded
-  }
+.eleventy-plugin-embed-twitter {
+  @apply w-fit mx-auto
 }

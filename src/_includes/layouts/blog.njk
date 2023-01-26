@@ -15,5 +15,10 @@ layout: base
       </dd>
     </div>
   </div>
-  <div class="mt-6 prose lg:prose-lg max-w-none">{{ content | safe }}</div>
+  <div 
+    class="mt-6 max-w-none
+           prose lg:prose-lg
+           prose-h2:font-medium prose-h2:text-3xl
+           prose-img:mx-auto prose-img:shadow-lg prose-img:rounded
+           prose-code:font-normal prose-pre:shadow-lg prose-pre:rounded">{{ content | safe }}</div>
 </article>
