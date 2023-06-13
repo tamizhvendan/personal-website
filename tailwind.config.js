@@ -3,7 +3,7 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  content: ['./_includes/**/*.njk'],
+  content: ['./_includes/**/*.njk', './content/**/*.njk'],
 
   theme: {
     fontFamily: {

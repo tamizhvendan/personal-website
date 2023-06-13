@@ -17,7 +17,23 @@
   </head>
 
   <body class="font-body">
-    <main class="mx-auto max-w-3xl px-4 py-4 lg:p-0">
+    <header class="px-4 py-4 lg:p-0 mx-auto max-w-4xl mt-2 flex items-center justify-between">
+      <img class="h-8 w-12 md:h-10 md:w-20" src="/assets/images/tamizh.svg" alt="Tamizh in words"/>
+      <nav>
+        <ul class="flex items-center space-x-3 md:space-x-4">
+          <li>
+            <a href="/" {% if page.url == '/' %} class="underline decoration-2 underline-offset-4"  {% endif %}>Home</a>
+          </li>
+          <li>
+            <a href="/blog" {% if page.url == '/blog/' %} class="underline decoration-2 underline-offset-4"  {% endif %}>Blog</a>
+          </li>
+          <li>
+            <a href="/about" {% if page.url == '/about/' %} class="underline decoration-2 underline-offset-4"  {% endif %}>About Me</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="mx-auto max-w-4xl px-4 lg:p-0 mt-4 md:mt-8 lg:mt-16 mb-6 md:mb-10">
       {% block content %}
         {{ content | safe }}
       {% endblock %}
