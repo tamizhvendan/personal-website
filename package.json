@@ -4,9 +4,9 @@
   "description": "",
   "scripts": {
     "watch:eleventy": "eleventy --serve",
-    "watch:tailwind": "tailwindcss -i src/styles/site.css -o _tmp/site.css --watch",
+    "watch:tailwind": "tailwindcss -i assets/styles/site.css -o _tmp/site.css --watch",
     "start": "npm-run-all --parallel watch:*",
-    "build": "NODE_ENV=production tailwindcss -i src/styles/tailwind.css -o _tmp/site.css --minify && ELEVENTY_PRODUCTION=true eleventy"
+    "build": "NODE_ENV=production tailwindcss -i assets/styles/site.css -o _tmp/site.css --minify && ELEVENTY_PRODUCTION=true eleventy"
   },
   "repository": {
     "type": "git",
