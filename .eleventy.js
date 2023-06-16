@@ -31,7 +31,9 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(timeToRead, { style: "short" });
-  eleventyConfig.addPlugin(embedTwitter);
+  eleventyConfig.addPlugin(embedTwitter, {
+    width: "50%"
+  });
 
   eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
     if (outputPath && outputPath.endsWith(".html")) {
