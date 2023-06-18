@@ -1,0 +1,51 @@
+[
+  {
+    "author": "Don Syme",
+    "handle": "@dsymetweets",
+    "url": "https://twitter.com/dsymetweets/status/742146358656831488",
+    "avatarUrl": "https://pbs.twimg.com/profile_images/1611298912186372097/-OUR6dEt_400x400.jpg",
+    "content": "@tamizhvendan has a nice blog http://blog.tamizhvendan.in.  He's also author of \"F# Applied\" on web with F#+Suave http://products.tamizhvendan.in/fsharp-applied/"
+  },
+  {
+    "author": "Roman Provazník",
+    "handle": "@Dzoukr",
+    "url": "https://twitter.com/Dzoukr/status/743388528118206464",
+    "avatarUrl": "https://pbs.twimg.com/profile_images/1093890752936062976/3WzMUK1Y_400x400.jpg",
+    "content": "I bought this @tamizhvendan book about @SuaveIO few days ago and must say it is totally kick ass! #goodjob #fsharphttps://t.co/xuKRZbSKc0"
+  },
+  {
+    "author": "Lay",
+    "handle": "@laygr",
+    "url": "https://twitter.com/laygr/status/765725896502226944",
+    "avatarUrl": "https://pbs.twimg.com/profile_images/2261943055/aaa_400x400.png",
+    "content": "I find F# Applied very well written. Thanks @tamizhvendan for a great job! (and a ;) for the @SuaveIO team)"
+  },
+  {
+    "author": "Vicenç Garcia",
+    "handle": "@vgaltes",
+    "url": "https://twitter.com/vgaltes/status/742827351113891840",
+    "avatarUrl": "https://pbs.twimg.com/profile_images/1574068215541649408/FXq_9WDd_400x400.jpg",
+    "content": "I've just started reading @tamizhvendan book about @SuaveIO and F#. Really nice to start with you own implementation of #suave. #recommend"
+  },
+  {
+    "author": "Vagif Abilov",
+    "handle": "@ooobject",
+    "url": "https://twitter.com/ooobject/status/743306685771440128",
+    "avatarUrl": "https://pbs.twimg.com/profile_images/972046058/vagif1_400x400.JPG",
+    "content": "F# Applied is a very good book. Teaches how to build Suave framework from ground up."
+  },
+  {
+    "author": "FSharpTV",
+    "handle": "@AwesomeFSharp",
+    "url": "https://twitter.com/AwesomeFSharp/status/742262424015900672",
+    "avatarUrl": "https://pbs.twimg.com/profile_images/715490260138897408/PhjPlgSG_400x400.jpg",
+    "content": "If you want to power up your learning I'd suggest you take a look at this awesome book on f# #webdev"
+  },
+  {
+    "author": "Serhii Kalinets",
+    "handle": "@skalinets",
+    "url": "https://twitter.com/skalinets/status/743376775699390464",
+    "avatarUrl": "https://pbs.twimg.com/profile_images/1775335138/1270545224_robotchicken_400x400.jpeg",
+    "content": "fantastic book. Just have bought it. #fsharp"
+  }
+]

@@ -10,6 +10,7 @@ var markdownItEmoji = require('markdown-it-emoji');
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const timeToRead = require('eleventy-plugin-time-to-read');
 const embedTwitter = require("eleventy-plugin-embed-twitter");
+const inspect = require("util").inspect;
 
 moment.locale('en');
 
@@ -54,6 +55,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter('dateReadable', date => {
     return moment(date).utc().format('LL');
   });
+
+  eleventyConfig.addFilter("debug", (content) => `<pre>${inspect(content)}</pre>`);
 
   return {
     markdownTemplateEngine: 'njk',
