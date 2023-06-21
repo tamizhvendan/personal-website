@@ -6,9 +6,8 @@
 
   /* Theming */
   :root {
-    --font-display: 'Figtree';
-    /* --font-body: 'Figtree'; */
-    --font-body: 'Source Sans Pro';
+    --font-display: 'Inter';
+    --font-body: 'Figtree';
     --font-mono: 'IBM Plex Mono';
   }
 
