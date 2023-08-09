@@ -10,6 +10,8 @@ var markdownItEmoji = require('markdown-it-emoji');
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const timeToRead = require('eleventy-plugin-time-to-read');
 const embedTwitter = require("eleventy-plugin-embed-twitter");
+const eleventyGoogleFonts = require("eleventy-google-fonts");
+
 const inspect = require("util").inspect;
 
 moment.locale('en');
@@ -35,6 +37,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(embedTwitter, {
     width: "50%"
   });
+  eleventyConfig.addPlugin(eleventyGoogleFonts);
 
   eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
     if (outputPath && outputPath.endsWith(".html")) {
