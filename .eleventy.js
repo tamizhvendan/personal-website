@@ -54,6 +54,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter('dateIso', date => {
     return moment(date).toISOString();
   });
+  eleventyConfig.addFilter('date', date => {
+    return moment(date).format("yyyy-MM-DD");
+  });
 
   eleventyConfig.addFilter('dateReadable', date => {
     return moment(date).utc().format('LL');
