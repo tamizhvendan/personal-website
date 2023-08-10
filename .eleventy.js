@@ -64,6 +64,19 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter("debug", (content) => `<pre>${inspect(content)}</pre>`);
 
+  // Return all the tags used in a collection
+  eleventyConfig.addFilter("getAllTags", collection => {
+    let tagSet = new Set();
+    for (let item of collection) {
+      (item.data.tags || []).forEach(tag => tagSet.add(tag));
+    }
+    return Array.from(tagSet);
+  });
+
+  eleventyConfig.addFilter("filterTagList", function filterTagList(tags) {
+    return (tags || []).filter(tag => ["all", "nav", "post", "posts", "blog"].indexOf(tag) === -1);
+  });
+
   return {
     markdownTemplateEngine: 'njk',
     dir: {
