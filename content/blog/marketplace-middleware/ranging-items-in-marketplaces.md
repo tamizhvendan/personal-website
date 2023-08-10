@@ -21,7 +21,7 @@ This blog post is going to be a long one. So, here is a sneak preview of what we
 
 The handling logic of all these operational messages will be as follows.
 
-![](/images/blog/marketplace-middleware/message-handling-process.png)
+![](/assets/images/blog/marketplace-middleware/message-handling-process.png)
 
 
 1. Upon receiving the message, we log the message as an OMS event. It help us to keep track of the messages that we received from the OMS.
@@ -632,7 +632,7 @@ When we test drive the app by reloading the application in the REPL and putting 
 </EXTNChannelList>
 ```
 
-![](/images/blog/marketplace-middleware/invalid-xml-slack-error.png)
+![](/assets/images/blog/marketplace-middleware/invalid-xml-slack-error.png)
 
 ```xml
 <EXTNChannelList>
@@ -643,7 +643,7 @@ When we test drive the app by reloading the application in the REPL and putting 
 </EXTNChannelList>
 ```
 
-![](/images/blog/marketplace-middleware/invalid-spec-slack-error.png)
+![](/assets/images/blog/marketplace-middleware/invalid-spec-slack-error.png)
 
 Finally, a valid ranging XML message will throw the "todo" exception.
 
@@ -654,7 +654,7 @@ Finally, a valid ranging XML message will throw the "todo" exception.
   </EXTNChannelItemList>
 </EXTNChannelList>
 ```
-![](/images/blog/marketplace-middleware/todo-slack-error.png)
+![](/assets/images/blog/marketplace-middleware/todo-slack-error.png)
 
 Everything is working as expected! Let's move to the final step of processing the `ranging` message.
 
@@ -865,7 +865,7 @@ With this mock server, if we do a test drive of the implementation, we'll get th
 </EXTNChannelList>
 ```
 
-![](/images/blog/marketplace-middleware/ch-not-found-slack-error.png)
+![](/assets/images/blog/marketplace-middleware/ch-not-found-slack-error.png)
 
 If we try with the channel id `UB`, we'll get the processing failed exception.
 
@@ -877,7 +877,7 @@ If we try with the channel id `UB`, we'll get the processing failed exception.
 </EXTNChannelList>
 ```
 
-![](/images/blog/marketplace-middleware/ch-ranging-failed-slack-error.png)
+![](/assets/images/blog/marketplace-middleware/ch-ranging-failed-slack-error.png)
 
 For the channel id `UA`, we'll get the ranging succeeded as expected in the standard output log.
 
@@ -997,7 +997,7 @@ user=> (reset)
 
 Then put the valid XML ranging message of channel `UA` in IBM-MQ, we should be able to see the new events in the database.
 
-![](/images/blog/marketplace-middleware/appender-db-output.png)
+![](/assets/images/blog/marketplace-middleware/appender-db-output.png)
 
 That's it!
 

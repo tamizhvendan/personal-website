@@ -6,7 +6,7 @@ tags: ['blog', 'programming', 'csharp', 'object-oriented-programming']
 
 In this blog post we are going to see, how to achieve dynamic polymorphism in c# using interfaces through a small game simulator called `War`.
 
-![](/images/blog/dynamic-polymorphism-real-time-example/WarForm.png)
+![](/assets/images/blog/dynamic-polymorphism-real-time-example/WarForm.png)
 
 The simulator is simple and straight forward to play. The user just need to select a weapon and click on `Attack`.
 

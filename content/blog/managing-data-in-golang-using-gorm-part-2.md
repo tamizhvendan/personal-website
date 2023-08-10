@@ -172,7 +172,7 @@ To keep things simple, we are not discussing dependency injection in `handler` a
 
 Back to our business, the data access logic of the three steps will be in their respective packages and the `publish` handler coordinate the entire use case logic. 
 
-![](/images/blog/managing-data-in-golang-using-gorm-part-2/code_org.png)
+![](/assets/images/blog/managing-data-in-golang-using-gorm-part-2/code_org.png)
 
 #### Step 1: Create a Tag if not exists
 

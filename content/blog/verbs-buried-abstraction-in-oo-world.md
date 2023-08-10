@@ -133,13 +133,13 @@ class Program2
 
 Just two lines instead of two comparers. All we did is just changed the way we create abstractions. Let me explain it using some visuals.
 
-![](/images/blog/verbs-buried-abstraction-in-oo-world/1.png)
+![](/assets/images/blog/verbs-buried-abstraction-in-oo-world/1.png)
 
 `OrderBy` is an abstraction which does only one thing, that is order the objects in an ascending order and does it to the perfection. But to use this abstraction we need to provide two inputs, the objects and a function which provides the propery by which the objects to be sorted
 
 Does it closely resemble what we have seen earlier in the pseudocode ? Since it is generic, we can also use it for all other objects (Product, Customer, etc.,) too !
 
-![](/images/blog/verbs-buried-abstraction-in-oo-world/2.png)
+![](/assets/images/blog/verbs-buried-abstraction-in-oo-world/2.png)
 
 ## Summary
 

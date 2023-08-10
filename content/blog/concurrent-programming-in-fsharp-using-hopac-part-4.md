@@ -310,7 +310,7 @@ From the log that we can assert that we gracefully handled the negative acknowle
 
 Here is my best effort to show what is happening in the `delayedPrintnWithNack` function
 
-![](/images/blog/hopac/nack.png)
+![](/assets/images/blog/hopac/nack.png)
 
 ## Summary
 

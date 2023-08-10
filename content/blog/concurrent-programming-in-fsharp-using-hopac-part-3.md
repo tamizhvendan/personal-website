@@ -21,7 +21,7 @@ Let's get started by spending some time on understanding the problem that we are
 
 Our objective is to write a backend which serves the data for showing a GitHub user profile like below
 
-![](/images/blog/hopac/Profile.png)
+![](/assets/images/blog/hopac/Profile.png)
 
 This profile view has three components.
 
@@ -33,7 +33,7 @@ This profile view has three components.
 
 To get these data from GitHub APIs, we need to make five API calls.
 
-![](/images/blog/hopac/Profile_With_API_Calls.png)
+![](/assets/images/blog/hopac/Profile_With_API_Calls.png)
 
 > We can use GitHub's [GraphQL API](https://developer.github.com/v4/) to minimise it. As the focus of this blog post is different, we are not going to consider this.
 
@@ -658,7 +658,7 @@ val cts : CancellationTokenSource
 
 We can then verify the API via Curl.
 
-![](/images/blog/hopac/api_response.png)
+![](/assets/images/blog/hopac/api_response.png)
 
 Awesome!!
 

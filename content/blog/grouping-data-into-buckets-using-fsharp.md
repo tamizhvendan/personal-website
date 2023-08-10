@@ -6,7 +6,7 @@ tags: ['blog', 'programming', 'fsharp', 'functional-programming']
 
 Last week I came across an interesting data grouping problem, which groups the data into different buckets based on the given filters as shown in the image below
 
-![](/images/blog/grouping-data-into-buckets-using-fsharp/1.png)
+![](/assets/images/blog/grouping-data-into-buckets-using-fsharp/1.png)
 
 In this blog post I am going to share how can we solve this problem very expressively using fsharp.
 

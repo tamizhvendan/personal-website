@@ -12,7 +12,7 @@ Welcome back to the sixth part of my blog series on concurrent programming in fs
 
 The example that we are going to see is a time bomb simulator. The time bomb transitions through different states as shown below during its lifecycle.
 
-![](/images/blog/hopac/timebomb_state_transition.png)
+![](/assets/images/blog/hopac/timebomb_state_transition.png)
 
 The associated fsharp type `TimeBomb` will have the following signature
 

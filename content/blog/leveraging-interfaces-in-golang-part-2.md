@@ -12,7 +12,7 @@ In my current project, we are using [Postgres](https://www.postgresql.org/) for 
 
 The requirement is to store and retrieve an array of strings from Postgres!
 
-![](/images/blog/leveraging-interfaces-in-golang-part-2/slice-to-array-conversion.png)
+![](/assets/images/blog/leveraging-interfaces-in-golang-part-2/slice-to-array-conversion.png)
 
 It sounds simple on paper but while implementing it we found that it is not straightforward. Let me explain what the challenge was and how we solved it through a **Task list** example
 

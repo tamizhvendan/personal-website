@@ -29,11 +29,11 @@ One day after toying with Jade for quite some time, I’ve went to bed and it st
 Jade-Visaulizer is a single-page app, with only three parts.
 
 1. The Jade Template – A textarea to play with the jade-template
-   ![](/images/blog/jade-visualizer-using-nodejs-and/1.png)
+   ![](/assets/images/blog/jade-visualizer-using-nodejs-and/1.png)
 2. Data – Want to mix some data with the jade template ? It is for you. Enter some hacky data in JSON format in it and start toying!
-  ![](/images/blog/jade-visualizer-using-nodejs-and/2.png)
+  ![](/assets/images/blog/jade-visualizer-using-nodejs-and/2.png)
 3. Output – Excited about what would be the generated output ? This part will help you to feed your brain.
-  ![](/images/blog/jade-visualizer-using-nodejs-and/3.png)
+  ![](/assets/images/blog/jade-visualizer-using-nodejs-and/3.png)
 
 ## Behind the Scene
 

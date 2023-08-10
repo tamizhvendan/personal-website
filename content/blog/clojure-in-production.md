@@ -2,7 +2,7 @@
 title: Using Clojure in Production
 date: 2018-09-26
 tags: ['blog', 'case-study', 'clojure']
-ogImage: "/images/blog/clojure-in-production/og-image.png"
+ogImage: "/assets/images/blog/clojure-in-production/og-image.png"
 ---
 
 We at [Ajira](https://www.ajira.tech) successfully delivered our first project in [Clojure](https://clojure.org) recently. It was an impressive outing for the last eight weeks! 

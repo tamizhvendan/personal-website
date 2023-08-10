@@ -20,7 +20,7 @@ They decided to improve this process by performing all the activities using thei
 
 The system that we built would look like this.
 
-![](/images/blog/marketplace-middleware/middleware-10K-View.png)
+![](/assets/images/blog/marketplace-middleware/middleware-10K-View.png)
 
 The retailer's back office team perform their operations with their OMS. The OMS exposes these activities to the outside system using [IBM MQ](https://www.ibm.com/support/knowledgecenter/en/SSFKSJ_8.0.0/com.ibm.mq.pro.doc/q001020_.htm). 
 

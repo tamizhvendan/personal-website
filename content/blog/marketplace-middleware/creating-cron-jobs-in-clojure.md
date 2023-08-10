@@ -611,7 +611,7 @@ Thanks to our existing logging infrastructure, logging cron job started and fail
 
 If we stop the fake API server for a moment, we will get the cron-job notification in the slack when the cron job got triggered.
 
-![](/images/blog/marketplace-middleware/cron-job-failed-notification.png)
+![](/assets/images/blog/marketplace-middleware/cron-job-failed-notification.png)
 
 ## Summary
 

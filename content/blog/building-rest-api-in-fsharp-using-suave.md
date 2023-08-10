@@ -16,7 +16,7 @@ Let’s get started
 
 Create a new “F# Console Application” project in Visual Studio with the name `SuaveRestApi` and rename *Program.fs* to *App.fs*. This file is going to contain the application bootstrap logic. Add two more files *Db.fs* and *RestFul.fs* which would contain database access and restful api implementation code respectively. Ensure these files are in the order as shown in below.
 
-![](/images/blog/building-rest-api-in-fsharp-using-suave/1.png)
+![](/assets/images/blog/building-rest-api-in-fsharp-using-suave/1.png)
 
 After creating, install the following nuget packages
 
@@ -47,7 +47,7 @@ let main argv =
 
 The is the simplest Suave application that greets all visitors with the string “Hello, Suave!”. The `startWebServer` is a blocking function that takes a configuration (port number, ssl, etc.,) and starts a http web server in the port `8083` upon calling.
 
-![](/images/blog/building-rest-api-in-fsharp-using-suave/2.png)
+![](/assets/images/blog/building-rest-api-in-fsharp-using-suave/2.png)
 
 The Rest Api that we are going to design here is a `WebPart` which will be replacing this `OK` webpart.
 
@@ -161,7 +161,7 @@ let main argv =
 That’s it! Now we have the HTTP GET Request up and running
 
 
-![](/images/blog/building-rest-api-in-fsharp-using-suave/3.png)
+![](/assets/images/blog/building-rest-api-in-fsharp-using-suave/3.png)
 
 ## HTTP POST
 
@@ -235,7 +235,7 @@ let personWebPart = rest "people" {
 
 The HTTP POST function in action
 
-![](/images/blog/building-rest-api-in-fsharp-using-suave/4.png)
+![](/assets/images/blog/building-rest-api-in-fsharp-using-suave/4.png)
 
 ## HTTP PUT
 
@@ -305,11 +305,11 @@ let personWebPart = rest "people" {
 ```
 Updating an existing resource is now live
 
-![](/images/blog/building-rest-api-in-fsharp-using-suave/5.png)
+![](/assets/images/blog/building-rest-api-in-fsharp-using-suave/5.png)
 
 When we try to update a non-existing resource, we will get the HTTP Bad Request response.
 
-![](/images/blog/building-rest-api-in-fsharp-using-suave/6.png)
+![](/assets/images/blog/building-rest-api-in-fsharp-using-suave/6.png)
 
 
 ## HTTP DELETE
@@ -387,7 +387,7 @@ let personWebPart = rest "people" {
 }
 ```
 
-![](/images/blog/building-rest-api-in-fsharp-using-suave/7.png)
+![](/assets/images/blog/building-rest-api-in-fsharp-using-suave/7.png)
 
 
 ## HTTP GET & HTTP PUT by id
@@ -449,9 +449,9 @@ let personWebPart = rest "people" {
 }
 ```
 
-![](/images/blog/building-rest-api-in-fsharp-using-suave/8.png)
+![](/assets/images/blog/building-rest-api-in-fsharp-using-suave/8.png)
 
-![](/images/blog/building-rest-api-in-fsharp-using-suave/9.png)
+![](/assets/images/blog/building-rest-api-in-fsharp-using-suave/9.png)
 
 ## HTTP HEAD
 
@@ -506,7 +506,7 @@ let personWebPart = rest "people" {
 }
 ```
 
-![](/images/blog/building-rest-api-in-fsharp-using-suave/10.png)
+![](/assets/images/blog/building-rest-api-in-fsharp-using-suave/10.png)
 
 That’s all.. We have successfully implemented a REST API using Suave
 
@@ -544,13 +544,13 @@ let main argv =
   0
 ```
 
-![](/images/blog/building-rest-api-in-fsharp-using-suave/11.png)
+![](/assets/images/blog/building-rest-api-in-fsharp-using-suave/11.png)
 
 ## Conclusion
 
 In the amazing presentation on [Functional Programming Design Patterns](https://skillsmatter.com/skillscasts/6120-functional-programming-design-patterns-with-scott-wlaschin), Scott Wlaschin had this slide
 
-![](/images/blog/building-rest-api-in-fsharp-using-suave/12.png)
+![](/assets/images/blog/building-rest-api-in-fsharp-using-suave/12.png)
 
 I wondered how this can be applied in real-time. By creating a rest API using suave I’ve understood this.
 

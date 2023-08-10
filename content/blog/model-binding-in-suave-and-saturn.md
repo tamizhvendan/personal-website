@@ -60,7 +60,7 @@ Let's find a solution to this!
 
 The model binding logic that we wanted to develop should conceptually work like this
 
-![](/images/blog/model-binding-in-suave-and-saturn/model-binding.png)
+![](/assets/images/blog/model-binding-in-suave-and-saturn/model-binding.png)
 
 It takes three input, 
 

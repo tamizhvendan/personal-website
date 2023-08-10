@@ -14,7 +14,7 @@ In this blog post, we are going to see the application of the above statements b
 
 Let’s assume that you are asked to build the backend for the below GitHub user profile screen.
 
-![](/images/blog/implementing-api-gateway-in-f-number-using-rx-and-suave/1.png)
+![](/assets/images/blog/implementing-api-gateway-in-f-number-using-rx-and-suave/1.png)
 
 This profile screen has 3 components
 
@@ -25,13 +25,13 @@ This profile screen has 3 components
 Now as a developer, you have two options
 
 * Build the Profile completely in client side by calling their corresponding GitHub APIs
-![](/images/blog/implementing-api-gateway-in-f-number-using-rx-and-suave/2.png)
+![](/assets/images/blog/implementing-api-gateway-in-f-number-using-rx-and-suave/2.png)
 
   This approach makes the client side complex as it involves five HTTP requests to create the complete profile screen. It has a lot of drawbacks as mentioned in [this blog post](http://techblog.netflix.com/2013/01/optimizing-netflix-api.html) by Netflix.
 
 * The other option is to create a facade API which takes care of the heavy lifting and hides the complexity of calling multiple services by exposing a single endpoint which returns all the data required to create the profile screen in one API call
 
-![](/images/blog/implementing-api-gateway-in-f-number-using-rx-and-suave/3.png)
+![](/assets/images/blog/implementing-api-gateway-in-f-number-using-rx-and-suave/3.png)
 
   This approach is called API Gateway. It is one of the commonly used [patterns in the microservices](http://microservices.io/patterns/apigateway.html) world.
 
@@ -303,7 +303,7 @@ The `map` function has the following signature
 ```fsharp
 ('a -> 'b) -> IObservable<'a> -> IObservable<'b>
 ```
-![](/images/blog/implementing-api-gateway-in-f-number-using-rx-and-suave/4.png)
+![](/assets/images/blog/implementing-api-gateway-in-f-number-using-rx-and-suave/4.png)
 
 The `flatMap` function has the following signature
 
@@ -311,7 +311,7 @@ The `flatMap` function has the following signature
 ('a -> IObservable<'b>) -> IObservable<'a> -> IObservable<'b>
 ```
 
-![](/images/blog/implementing-api-gateway-in-f-number-using-rx-and-suave/5.png)
+![](/assets/images/blog/implementing-api-gateway-in-f-number-using-rx-and-suave/5.png)
 
 This function is also called as `bind` function in the functional programming world. If you would like to know further on this topic, I strongly recommend [this blog series](http://fsharpforfunandprofit.com/posts/elevated-world) by the F# great, [Scott Wlaschin](https://twitter.com/ScottWlaschin).
 

@@ -22,7 +22,7 @@ let Run(req: HttpRequestMessage) =
 
 The `Run` function takes a `HttpRequestMessage` and returns the `HttpResponseMessage`. This signature is simple, but it has a limitation. The limitation has been showcased in the templates directory of Azure Webjobs SDK.
 
-![](/images/blog/scale-up-azure-functions-in-f-number-using-suave/1.png)
+![](/assets/images/blog/scale-up-azure-functions-in-f-number-using-suave/1.png)
 
 Each of the CRUD operations are in different functions. Well, there is nothing wrong here. These templates are suitable for getting started in Azure Functions. But what will you do if you have a requirement to expose CRUD of a resource as an Azure Functions?
 
@@ -99,7 +99,7 @@ In nutshell, Suave complements Azure Functions and helps you to define your syst
 
 So, to scale up Azure Functions using Suave, all we need is an adapter.
 
-![](/images/blog/scale-up-azure-functions-in-f-number-using-suave/2.jpeg)
+![](/assets/images/blog/scale-up-azure-functions-in-f-number-using-suave/2.jpeg)
 
 The adapter does the following
 
@@ -288,7 +288,7 @@ let Run (req : HttpRequestMessage) =
 
 Let’s make some HTTP requests to test our implementation.
 
-![](/images/blog/scale-up-azure-functions-in-f-number-using-suave/3.png)
+![](/assets/images/blog/scale-up-azure-functions-in-f-number-using-suave/3.png)
 
 Suave is rocking!
 
@@ -452,7 +452,7 @@ let Run (req : HttpRequestMessage) =
 
 ## Serverless REST API in Action
 
-![](/images/blog/scale-up-azure-functions-in-f-number-using-suave/4.jpeg)
+![](/assets/images/blog/scale-up-azure-functions-in-f-number-using-suave/4.jpeg)
 
 > This blog post is a proof of concept to use Suave in Azure Functions. There are a lot of improvements to be made to make it production ready. I am planning to publish this as a NuGet package based on the feedback from the community.
 

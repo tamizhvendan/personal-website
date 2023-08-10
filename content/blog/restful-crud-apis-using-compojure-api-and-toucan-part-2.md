@@ -140,11 +140,11 @@ If we have a closer look at the routes & handlers of the CRUD operations of `Boo
 ### Create Handler
 Let's start from `create` handler & route.
 
-![](/images/blog/restful-crud-apis-using-compojure-api-and-toucan-part-2/create-api.png)
+![](/assets/images/blog/restful-crud-apis-using-compojure-api-and-toucan-part-2/create-api.png)
 
 As we can see from the diagram, other than canonicalising the create request all the other things are similar across two implementations. We can view this implementation like a pipeline.
 
-![](/images/blog/restful-crud-apis-using-compojure-api-and-toucan-part-2/create-pipeline.png) **-represents entity*
+![](/assets/images/blog/restful-crud-apis-using-compojure-api-and-toucan-part-2/create-pipeline.png) **-represents entity*
 
 We can take inspiration from Pedestal's [interceptor](http://pedestal.io/reference/interceptors), and model the *pre-insert-hook* as `enter`.
 
@@ -180,10 +180,10 @@ The abstracted version of `create` would look like
 ### Get By Id Handler
 
 The `get-by-id` handlers of `user` & `book` differ on what we do after we fetch it from the database.  
-![](/images/blog/restful-crud-apis-using-compojure-api-and-toucan-part-2/get-by-id-api.png)
+![](/assets/images/blog/restful-crud-apis-using-compojure-api-and-toucan-part-2/get-by-id-api.png)
 As depicted in the image, in `get-user-handler` we `dissoc` the `password_hash` from the `user` instance.
 Again this can be viewed as a pipeline, where need a hook to transform the instance retrieved from the database.
-![](/images/blog/restful-crud-apis-using-compojure-api-and-toucan-part-2/get-by-id-pipeline.png)
+![](/assets/images/blog/restful-crud-apis-using-compojure-api-and-toucan-part-2/get-by-id-pipeline.png)
 
 This `post-fetch-hook` can be viewed as a `leave` interceptor and implemented as below.
 
@@ -350,6 +350,6 @@ The sample implementation in this blog post not covers certain aspects like erro
 
 IMHO there is no [perfect abstraction](https://www.youtube.com/watch?v=zhpWhkW8kcc), and it applies to the one that we just saw as well. It was just perfect enough and enabled us to move faster. 
 
-![](/images/blog/restful-crud-apis-using-compojure-api-and-toucan-part-2/how-to-abstract.png) *Credits- Alex Martelli's [Tower of abstractions talk](https://www.youtube.com/watch?v=zhpWhkW8kcc)
+![](/assets/images/blog/restful-crud-apis-using-compojure-api-and-toucan-part-2/how-to-abstract.png) *Credits- Alex Martelli's [Tower of abstractions talk](https://www.youtube.com/watch?v=zhpWhkW8kcc)
 
 > The sample code is available on [GitHub](https://github.com/demystifyfp/BlogSamples/tree/0.11/clojure/restful-crud).

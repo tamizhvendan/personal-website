@@ -12,23 +12,23 @@ As both the languages has its own design and principles (immutable types, not al
 
 When you create [a class in F#](http://fsharpforfunandprofit.com/posts/classes/), by default, we can’t explicitly assign a null value to an instance of the class unlike C#. You will get a compiler error when you do it. It’s a great feature and it helps in getting rid of Null Reference exceptions.
 
-![](/images/blog/some-tips-for-using-c-number-libraries-in-f-number/1.png)
+![](/assets/images/blog/some-tips-for-using-c-number-libraries-in-f-number/1.png)
 
 But in certain cases, we may need to assign a null value to a class. For example, let us take the [Find method](https://msdn.microsoft.com/en-us/library/dn497475(v=vs.108).aspx) in the Asp.Net identity framework. It returns a user with the specified username and password or null if there is a no match.
 
 When you try to use this in a fsharp code, you will be getting a compiler error
 
-![](/images/blog/some-tips-for-using-c-number-libraries-in-f-number/2.png)
+![](/assets/images/blog/some-tips-for-using-c-number-libraries-in-f-number/2.png)
 
 It’s where [AllowNullLiteral](https://msdn.microsoft.com/en-us/library/ee353608.aspx?f=255&MSPPError=-2147217396) attribute comes into the picture. If you want to make a class type to allow null literal as one of its value, you need to decorate that class with the AllowNullLiteral attribute.
 
-![](/images/blog/some-tips-for-using-c-number-libraries-in-f-number/3.png)
+![](/assets/images/blog/some-tips-for-using-c-number-libraries-in-f-number/3.png)
 
 ## `CLIMutable` Attribute
 
 When a F# Record type is compiled, it has been translated to a Common Language Infrastructure (CLI) representation of a typical value object declaration in C#.
 
-![](/images/blog/some-tips-for-using-c-number-libraries-in-f-number/4.png)
+![](/assets/images/blog/some-tips-for-using-c-number-libraries-in-f-number/4.png)
 
 The important thing to notice here is there is no default constructor!
 
@@ -38,7 +38,7 @@ So, if we need to have a default constructor for a fsharp record type when it ge
 
 The Presence of this attribute enables the compiler to generate the default constructor and the property setters when the code gets compiled to IL
 
-![](/images/blog/some-tips-for-using-c-number-libraries-in-f-number/5.png)
+![](/assets/images/blog/some-tips-for-using-c-number-libraries-in-f-number/5.png)
 
 ## Using Dynamic Types
 
@@ -48,13 +48,13 @@ The [ViewBag](http://stackoverflow.com/questions/14896013/how-viewbag-in-asp-net
 
 There is no straightforward way to access the dynamic types in fsharp.
 
-![](/images/blog/some-tips-for-using-c-number-libraries-in-f-number/6.png)
+![](/assets/images/blog/some-tips-for-using-c-number-libraries-in-f-number/6.png)
 
 If we would like to access dynamic types in fsharp we need to use the [ImpromptuInterface.FSharp](https://www.nuget.org/packages/ImpromptuInterface.FSharp/) nuget package.
 
 This package defines the `?` operator, which provides the implementation for accessing dynamic types.
 
-![](/images/blog/some-tips-for-using-c-number-libraries-in-f-number/7.png)
+![](/assets/images/blog/some-tips-for-using-c-number-libraries-in-f-number/7.png)
 
 ## Summary
 

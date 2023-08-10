@@ -50,17 +50,17 @@ There are two common ways to organize the models in golang.
 
 One approach is defining a folder called `models` and put all the models here
 
-![](/images/blog/managing-data-in-golang-using-gorm-part-1/models.png )
+![](/assets/images/blog/managing-data-in-golang-using-gorm-part-1/models.png )
 
 The another approach is an invert of this structure. In this design, we will have a separate folder for each model. 
 
-![](/images/blog/managing-data-in-golang-using-gorm-part-1/domain.png )
+![](/assets/images/blog/managing-data-in-golang-using-gorm-part-1/domain.png )
 
 Both the approaches have pros and cons. Choosing one over the other is entirely opinionated, and my preference is the second one.
 
 IMHO, the folder structure has [to represent the domain](https://8thlight.com/blog/uncle-bob/2011/09/30/Screaming-Architecture.html) and the code associated a domain model should coexist with proper separation of concern. 
 
-![](/images/blog/managing-data-in-golang-using-gorm-part-1/folder_structure.png)
+![](/assets/images/blog/managing-data-in-golang-using-gorm-part-1/folder_structure.png)
 
 > Software architectures are structures that support the use cases of the system - [Ivar Jacobson](https://www.amazon.com/Object-Oriented-Software-Engineering-Driven-Approach/dp/0201403471)
 

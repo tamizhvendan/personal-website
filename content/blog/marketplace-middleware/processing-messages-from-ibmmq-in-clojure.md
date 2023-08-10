@@ -244,11 +244,11 @@ user==> (reset)
 
 To send a message in IBM-MQ, go to its [web console](https://localhost:9443/ibmmq/console/), log in using the admin credentials, `admin` and `passw0rd`, click the queue name `DEV.QUEUE.1`
 
-![](/images/blog/marketplace-middleware/ranging-queue-web-console.png)
+![](/assets/images/blog/marketplace-middleware/ranging-queue-web-console.png)
 
 Then click on the downward arrow button in the top of this widget to put a message in this queue. This will open a popup and enter `Hello, IBM-MQ!` in the text box and click *Put*.
 
-![](/images/blog/marketplace-middleware/ranging-queue-sample-msg.png)
+![](/assets/images/blog/marketplace-middleware/ranging-queue-sample-msg.png)
 
 You should see this message in the terminal that is running the REPL
 

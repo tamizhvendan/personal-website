@@ -353,7 +353,7 @@ Compojure API offers Swagger integration out of the box. To wire it up we just n
 
 Now if we run the application, we can access the Swagger UI on http://localhost:3000/swagger
 
-![](/images/blog/restful-crud-apis-using-compojure-api-and-toucan-part-1/restful_user_swagger_ui.png)
+![](/assets/images/blog/restful-crud-apis-using-compojure-api-and-toucan-part-1/restful_user_swagger_ui.png)
 
 ## Summary 
 

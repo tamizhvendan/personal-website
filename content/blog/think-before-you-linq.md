@@ -16,13 +16,13 @@ I have encountered one of such efficiency issue with LINQ and it really made me 
 
 Here is the code snippet which address this problem and along with the output.
 
-![](/images/blog/think-before-you-linq/1.png)
+![](/assets/images/blog/think-before-you-linq/1.png)
 
 I have used two abstractions on this function, one is the LINQ extension method “Count” and the other one is iterating through the enumeration abstraction. Would you able to find an efficiency issue lurking on this very simple function? Kudos if you find it out.
 
 Let me give a small background about LINQ extension methods and Enumeration. Most of the LINQ extension methods are using lazy execution internally and computes the enumeration on demand basis. However some extension methods (`Count`, `Sum`) collectively called [Aggregate Operators](http://code.msdn.microsoft.com/LINQ-Aggregate-Operators-c51b3869) causes immediate execution instead of lazy execution on the enumeration. We can we make an enumeration to enumerate lazily by using [yield](http://msdn.microsoft.com/en-us/library/9k7k7cf0.aspx) statements. Enough theory,  let us see some code which shows the efficiency issue associated with the function that we have seen earlier
 
-![](/images/blog/think-before-you-linq/2.png)
+![](/assets/images/blog/think-before-you-linq/2.png)
 
 I have added some code in “PrintMe” method to log how it is actually getting executed. Also I have added the “GetNumbers” method which lazily creates a list of numbers using yield statement.
 
@@ -32,7 +32,7 @@ Though it is just a matter of nanoseconds in this example, it may be possible ca
 
 I hope now you are ready to think about efficiency when you code. Here in our case we can get rid of the efficiency issue by converting the enumeration of number to an array or a list using LINQ [convertor operators](http://code.msdn.microsoft.com/LINQ-Conversion-Operators-e4e59714) ToArray or ToList respectively. Like aggregate operators it causes immediate execution and converts the enumeration to the target type. Then we can do the operations on the converted target. Here is the code snippet of that with the output.
 
-![](/images/blog/think-before-you-linq/3.png)
+![](/assets/images/blog/think-before-you-linq/3.png)
 
 The modified code now iterate through the list only once!!
 

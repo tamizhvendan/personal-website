@@ -34,7 +34,7 @@ After creating, install the following NuGet packages
 
 Then add reference the .NET framework library `System.IdentityModel` in all the four projects from GAC and then add a reference to the *SuaveJwt* project library in all the other three projects.
 
-![](/images/blog/securing-apis-in-suave-using-json-web-token/1.png)
+![](/assets/images/blog/securing-apis-in-suave-using-json-web-token/1.png)
 
 ## New Audience Registration
 
@@ -192,7 +192,7 @@ To keep this simple, we are using in-memory dictionary here and it can be easily
 
 Now we have everything to create a new audience. So, let’s run the *SuaveJwt.AuthServerHost* application and verify
 
-![](/images/blog/securing-apis-in-suave-using-json-web-token/2.png)
+![](/assets/images/blog/securing-apis-in-suave-using-json-web-token/2.png)
 
 Keep a note of this `clientId` and `base64Secret` as we will be using them while defining the resource server (“Audience1” in this case).
 
@@ -202,7 +202,7 @@ After registering an audience with the authorization server, the next step is to
 
 Let’s begin by defining the business logic to create an access token.
 
-![](/images/blog/securing-apis-in-suave-using-json-web-token/3.png)
+![](/assets/images/blog/securing-apis-in-suave-using-json-web-token/3.png)
 
 Open *JwtToken.fs* and add the following types
 
@@ -385,7 +385,7 @@ To keep this simple, I am just hardcoding the credentials and claims here and it
 
 Let’s run the *SuaveJwt.AuthServerHost* and verify the token
 
-![](/images/blog/securing-apis-in-suave-using-json-web-token/4.png)
+![](/assets/images/blog/securing-apis-in-suave-using-json-web-token/4.png)
 
 ## Securing the resources
 
@@ -484,13 +484,13 @@ I’ve asked you to keep a note of the `clientId` and the `securityKey` while do
 
 Let’s see it in action
 
-![](/images/blog/securing-apis-in-suave-using-json-web-token/5.png)
+![](/assets/images/blog/securing-apis-in-suave-using-json-web-token/5.png)
 
 Hurray! We have made it. “/audience1/sample1” is a secured API now!
 
 What will happen if we mess with the access token? Well, we will get an HTTP error. Let’s change the character `Q` in the access token from upper case to lower case and here is the result of it.
 
-![](/images/blog/securing-apis-in-suave-using-json-web-token/6.png)
+![](/assets/images/blog/securing-apis-in-suave-using-json-web-token/6.png)
 
 Cool, Isn’t it?
 
@@ -558,7 +558,7 @@ let main argv =
 
 The `jwtAuthroize` function in action
 
-![](/images/blog/securing-apis-in-suave-using-json-web-token/7.png)
+![](/assets/images/blog/securing-apis-in-suave-using-json-web-token/7.png)
 
 *Note: I’ve generated a new access token here to exercise this use case.*
 

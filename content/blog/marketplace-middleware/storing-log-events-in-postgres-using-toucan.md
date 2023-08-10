@@ -219,7 +219,7 @@ wheel.model.event=> (create! {:name :ranging/succeeded
  :timestamp #inst "2019-10-01T07:00:00.000-00:00"}
 ```
 
-![](/images/blog/marketplace-middleware/first-event-in-pg.png)
+![](/assets/images/blog/marketplace-middleware/first-event-in-pg.png)
 
 Let's turn our attention to the Timbre side and a database appender to using this `create!` function to store the log entry (event).
 
@@ -294,7 +294,7 @@ wheel.infra.log=> (write! {:name :deranging/succeeded
 nil
 ```
 
-![](/images/blog/marketplace-middleware/second-event-in-pg.png)
+![](/assets/images/blog/marketplace-middleware/second-event-in-pg.png)
 
 
 ## Summary

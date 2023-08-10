@@ -212,7 +212,7 @@ Then, create a new file `user.clj` in the `dev` directory.
 <2> Adds a `reset` function, which stops the application and reloads all the modified codes. Using the `:after` parameter, we are informing the `refresh` function to start the app after the reload.
 
 To see it in action, stop the current REPL session and start it again. This time profile selection Calva prompt will include the `dev` profile in the list of options. 
-![](/images/blog/marketplace-middleware/lein-profiles-prompt.png)
+![](/assets/images/blog/marketplace-middleware/lein-profiles-prompt.png)
 
 When we select the `dev` profile, it will start the Leiningen REPL along with the configuration specified the `dev` profile. 
 

@@ -126,7 +126,7 @@ Let's invoke this `init` function from the application's `start-app` function to
 
 The middleware that we built acts as a liaison between our client's order management system(OMS) and the e-commerce marketplaces.
 
-![](/images/blog/marketplace-middleware/middleware-10K-View.png)
+![](/assets/images/blog/marketplace-middleware/middleware-10K-View.png)
 
 Logging all the business (domain) event occurred in or processed by the middleware is one of the critical requirement. We incorporated it by defining functions that either returns an event (a Clojure map) or a list of events. 
 

@@ -68,7 +68,7 @@ wheel.slack.webhook=> (post-message! "{{webhook-url}}"
 
 We should see something similar to this in the configured slack channel.
 
-![](/images/blog/marketplace-middleware/sample-slack-event.png)
+![](/assets/images/blog/marketplace-middleware/sample-slack-event.png)
 
 ### Updating Application Config
 

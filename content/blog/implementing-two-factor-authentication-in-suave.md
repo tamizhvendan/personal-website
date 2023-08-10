@@ -28,27 +28,27 @@ We are going to use [Time-based One-time Password(TOTP)](https://en.wikipedia.or
 
 We are going to build a tiny web appliaction that has an inbuilt user account with the username `foo` and the password `bar`
 
-![](/images/blog/implementing-two-factor-authentication-in-suave/Login.png)
+![](/assets/images/blog/implementing-two-factor-authentication-in-suave/Login.png)
 
 After successful login, the user redirected to the **Profile** page where the user sees his name with a couple of buttons. One to enable *Two-factor authentication* and another one to *log out*
 
-![](/images/blog/implementing-two-factor-authentication-in-suave/Profile.png)
+![](/assets/images/blog/implementing-two-factor-authentication-in-suave/Profile.png)
 
 Upon clicking the *Enable Two Factor Authentication* button, the user redirected to the **Enable Two Factor Authentication** page where the user has to scan the QR Code with the Google Authenticator App (For [Android](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=en) or [iPhone](https://itunes.apple.com/in/app/google-authenticator/id388497605?mt=8)). Then he needs to enter the verification code to enable Two-factor authentication for his account. 
 
-![](/images/blog/implementing-two-factor-authentication-in-suave/Enable_Two_Factor.png)
+![](/assets/images/blog/implementing-two-factor-authentication-in-suave/Enable_Two_Factor.png)
 
 *Google Authenticator App*
 
-![](/images/blog/implementing-two-factor-authentication-in-suave/Google_Authenticator.png)
+![](/assets/images/blog/implementing-two-factor-authentication-in-suave/Google_Authenticator.png)
 
 If the verification code matches, the updated **Profile** page will look like 
 
-![](/images/blog/implementing-two-factor-authentication-in-suave/Profile_After_Two_Factor.png)
+![](/assets/images/blog/implementing-two-factor-authentication-in-suave/Profile_After_Two_Factor.png)
 
 Now if the user logout and login again, he will be prompted to enter the verification code 
 
-![](/images/blog/implementing-two-factor-authentication-in-suave/Auth_Code_Prompt.png)
+![](/assets/images/blog/implementing-two-factor-authentication-in-suave/Auth_Code_Prompt.png)
 
 After entering the verification code from the Google Authenticator, the user will be redirected to his **Profile** page. 
 
@@ -118,7 +118,7 @@ Let's start by serving the Login page.
 
 Create a new directory with the name *views* in the *Suave.TwoFactorAuth* project and add a new liquid template *page.liquid*. This *page.liquid* is the master template for our application
 
-![](/images/blog/implementing-two-factor-authentication-in-suave/page.png)
+![](/assets/images/blog/implementing-two-factor-authentication-in-suave/page.png)
 
 After creating, change the 'Copy to output' property of the *page.liquid* file to 'Copy if newer' so that the view files copied to the build output directory. 
 
@@ -141,7 +141,7 @@ This step is applicable for all the other view templates that we will be creatin
 
 Then create a new template file *login.liquid* in the *views* directory 
 
-![](/images/blog/implementing-two-factor-authentication-in-suave/login_view.png)
+![](/assets/images/blog/implementing-two-factor-authentication-in-suave/login_view.png)
 
 The *login.liquid* view extends the *page.liquid* view and fill the placeholders for `head` and `content`.
 
@@ -319,7 +319,7 @@ The key function to note here is `secured` that takes a WebPart. It calls this W
 
 After successful login, we need to redirect the user to his profile page. Let's create a `profile.liquid` a view template for the Profile page
 
-![](/images/blog/implementing-two-factor-authentication-in-suave/profile_view.png)
+![](/assets/images/blog/implementing-two-factor-authentication-in-suave/profile_view.png)
 
 To render this profile page let's add some code 
 
@@ -436,7 +436,7 @@ let enableTwoFactorAuth username key =
 
 The next step is to define a liquid view template for the `enable_two_factor` page.
 
-![](/images/blog/implementing-two-factor-authentication-in-suave/enable_two_factor_view.png)
+![](/assets/images/blog/implementing-two-factor-authentication-in-suave/enable_two_factor_view.png)
 
 While enabling the Two-factor authentication, we need to generate a secret key for the user that will be required for both, one-time verification code generation as well as its verification.
 
@@ -449,7 +449,7 @@ So, in the *enable_two_factor.liquid* template we pass the generated `SecretKey`
 
 Now we need to render the `enable_two_factor` page in response to the *HTTP GET* request `/enable_two_factor`
 
-![](/images/blog/implementing-two-factor-authentication-in-suave/Enable_Two_Factor.png)
+![](/assets/images/blog/implementing-two-factor-authentication-in-suave/Enable_Two_Factor.png)
 
 Let's create a new module `GoogleAuthenticator` to put the Two-factor authentication related functions together
 
@@ -525,7 +525,7 @@ let app =
 
 While enabling Two-factor authentication, the user has to scan the QR-Code from his *Google Authenticator* app and he will be getting a one-time verification code like this upon adding
 
-![](/images/blog/implementing-two-factor-authentication-in-suave/Google_Authenticator.png)
+![](/assets/images/blog/implementing-two-factor-authentication-in-suave/Google_Authenticator.png)
 
 Then he will be entering this in the `enable_two_factor` page and click `Enable`.
 
@@ -581,7 +581,7 @@ The last step is to prompt for the verification code whenever the Two-factor Aut
 
 Let's start by defining the liquid view template `auth_code.liquid` for getting the one-time verification code.
 
-![](/images/blog/implementing-two-factor-authentication-in-suave/auth_code_view.png)
+![](/assets/images/blog/implementing-two-factor-authentication-in-suave/auth_code_view.png)
 
 ```fsharp
 // Suave.TwoFactorAuth/GoogleAuthenticator.fs

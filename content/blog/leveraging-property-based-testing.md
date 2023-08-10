@@ -176,7 +176,7 @@ After this FsCheck is happy and we too.
 
 While looking at `Suave.Http` codebase to fix the unit test failures, this is what I saw in the code
 
-![](/images/blog/leveraging-property-based-testing/send_pr.png)
+![](/assets/images/blog/leveraging-property-based-testing/send_pr.png)
 
 This is the beauty of open source, and I am glad [to do it](https://github.com/SuaveIO/suave/pull/512)
 
