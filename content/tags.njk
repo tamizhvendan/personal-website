@@ -17,7 +17,10 @@ eleventyComputed:
 permalink: /tags/{{ tag | slugify }}/
 ---
 
-<h1>Articles tagged with "{{ tag }}"</h1>
+<h1 class="text-center">Articles tagged with "{{ tag }}"</h1>
+
+<p class="text-center mt-3">Subscribe to the <span class="inline font-mono">{{ tag }}</span>
+  <a href="{{meta.siteUrl}}/{{tag | slugify}}-feed.xml" class="underline">RSS feed</a>.</p>
 
 <ol reversed class="mt-4 md:mt-6 space-y-6">
   {% for post in collections[tag] | reverse %}

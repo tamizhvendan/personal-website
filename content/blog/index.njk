@@ -4,7 +4,7 @@ layout: base
 eleventyExcludeFromCollections: true
 ---
 
-<h2>All Articles ({{collections.blog | length }}) </h2>
+<h2 class="text-center">All Articles ({{collections.blog | length }}) </h2>
 
 <ol reversed class="mt-4 md:mt-6 space-y-6">
   {% for post in collections.blog | reverse %}
