@@ -11,6 +11,7 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const timeToRead = require('eleventy-plugin-time-to-read');
 const embedTwitter = require("eleventy-plugin-embed-twitter");
 const eleventyGoogleFonts = require("eleventy-google-fonts");
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 const inspect = require("util").inspect;
 
@@ -38,6 +39,7 @@ module.exports = function (eleventyConfig) {
     width: "50%"
   });
   eleventyConfig.addPlugin(eleventyGoogleFonts);
+  eleventyConfig.addPlugin(pluginRss);
 
   eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
     if (outputPath && outputPath.endsWith(".html")) {
@@ -56,6 +58,9 @@ module.exports = function (eleventyConfig) {
   });
   eleventyConfig.addFilter('date', date => {
     return moment(date).format("yyyy-MM-DD");
+  });
+  eleventyConfig.addFilter('dateToRfc822', date => {
+    return moment(date).format('ddd, DD MMM YYYY HH:mm:ss ZZ');
   });
 
   eleventyConfig.addFilter('dateReadable', date => {

@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="{{description or meta.siteDescription}}"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:locale" content="en">
+    <meta property="og:type" content="website">
     {%- if (ogImage) -%}
       <meta property="og:image" content="{{ogImage}}">
     {%- endif -%}
@@ -15,6 +17,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
     {% eleventyGoogleFonts 'https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Figtree:wght@400;500;600;700&display=swap' %}
+
+    <script src="https://unpkg.com/prismjs@1.23.0/plugins/match-braces/prism-match-braces.js"></script>
   </head>
 
   <body class="font-body mx-auto max-w-5xl px-4 md:px-8 lg:p-0 mb-6 md:mb-10">
@@ -39,6 +43,5 @@
         {{ content | safe }}
       {% endblock %}
     </main>
-    <script src="https://unpkg.com/prismjs@1.23.0/plugins/match-braces/prism-match-braces.min.js" defer></script>
   </body>
 </html>

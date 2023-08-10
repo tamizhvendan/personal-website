@@ -17,7 +17,7 @@ eleventyComputed:
 permalink: /tags/{{ tag | slugify }}/
 ---
 
-<h1>{{ tag }} articles</h1>
+<h1>Articles tagged with "{{ tag }}"</h1>
 
 <ol reversed class="mt-4 md:mt-6 space-y-6">
   {% for post in collections[tag] | reverse %}
