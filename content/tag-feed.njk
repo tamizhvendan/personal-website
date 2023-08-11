@@ -11,14 +11,14 @@ pagination:
     - blog
   addAllPagesToCollections: true
 eleventyExcludeFromCollections: true
-permalink: /{{ tag | slugify }}-feed.xml
+permalink: /feeds/{{ tag | slugify }}-feed.xml
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="{{ metadata.url }}" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tamizhvendan's {{ tag | slugify }}'s articles"</title>
     <link>{{ meta.siteUrl }}/tags/{{tag | slugify}}</link>
-    <atom:link href="{{ meta.siteUrl }}/feed.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="{{ meta.siteUrl }}/feeds/{{ tag | slugify }}-feed.xml" rel="self" type="application/rss+xml"/>
     <description>{{ meta.description }}</description>
     <language>en</language>
     {%- for post in collections[tag] | reverse %}
