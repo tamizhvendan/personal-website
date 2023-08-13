@@ -18,14 +18,14 @@ layout: base
       {%- for tag in tags | filterTagList %}
         {%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
         <li>
-          <a href="{{ tagUrl }}" class="inline-flex items-center rounded-full bg-gray-50 px-2 py-1 text-sm font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">{{ tag }}</a>
+          <a href="{{ tagUrl }}" class="inline-flex items-center rounded-full bg-gray-100 px-2 py-1 text-sm font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">{{ tag }}</a>
         </li>
       {%- endfor %}
     </ul>
   </div>
   <div 
     class="mt-6 max-w-none
-           prose lg:prose-lg
+           prose md:prose-lg md:prose-xl
            prose-h2:font-medium prose-h2:text-3xl
            prose-img:mx-auto prose-img:shadow-lg prose-img:rounded
            prose-code:font-normal prose-pre:shadow-lg prose-pre:rounded">{{ content | safe }}</div>
