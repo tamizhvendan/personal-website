@@ -1,4 +1,3 @@
-console.log("=>" + process.env.NODE_ENV);
 module.exports = {
   host: "www.tamizhvendan.in",
   siteUrl: "https://www.tamizhvendan.in",

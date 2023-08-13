@@ -1,7 +1,7 @@
 ---
 title: "Concurrent Programming in fsharp using Hopac (Part-I)"
 date: 2018-02-26T19:08:32+05:30
-tags : ["blog", "programming", "fsharp", "Hopac", "concurrent-programming", "functional-programming"]
+tags : ["blog", "programming", "fsharp", "hopac", "concurrent-programming", "functional-programming"]
 ---
 
 Enabling developers to write concise code in solving complex problems is one of the significant characteristics of functional programming. The conciseness is mostly due to the abstractions provided by the functional programming language.

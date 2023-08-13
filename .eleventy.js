@@ -75,11 +75,15 @@ module.exports = function (eleventyConfig) {
     for (let item of collection) {
       (item.data.tags || []).forEach(tag => tagSet.add(tag));
     }
-    return Array.from(tagSet);
+    return Array.from(tagSet).sort();
   });
 
   eleventyConfig.addFilter("filterTagList", function filterTagList(tags) {
     return (tags || []).filter(tag => ["all", "nav", "post", "posts", "blog"].indexOf(tag) === -1);
+  });
+
+  eleventyConfig.addFilter("findableTags", (tags) => {
+    return (tags || []).filter(tag => ["csharp", "fsharp", "clojure"].indexOf(tag) !== -1);
   });
 
   return {

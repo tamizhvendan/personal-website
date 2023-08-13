@@ -1,7 +1,7 @@
 ---
 title: "Adding Meaning to Primitive Types in fsharp"
 date: 2018-02-12T19:23:36+05:30
-tags : ["blog", "programming", "fsharp", "monoid", "Category Theory", "functional-programming"]
+tags : ["blog", "programming", "fsharp", "monoid", "category-theory", "functional-programming"]
 ---
 
 One of the recommended guidelines in Domain Driven Design is modelling the domain ideas using the domain type (CustomerName, CustomerId) instead of using their corresponding primitive type (string, int). In fsharp, with the help of [Single-Case Discriminated Union](https://fsharpforfunandprofit.com/posts/designing-with-types-single-case-dus/), we can follow this guideline with minimal effort.

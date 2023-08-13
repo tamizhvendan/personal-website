@@ -19,8 +19,9 @@ permalink: /tags/{{ tag | slugify }}/
 
 <h1 class="text-center">Articles tagged with "{{ tag }}"</h1>
 
-<p class="text-center mt-3">Subscribe to the <span class="inline font-mono">{{ tag }}</span>
-  <a href="{{meta.siteUrl}}/feeds/{{tag | slugify}}-feed.xml" class="underline">RSS feed</a>.</p>
+<p class="text-center mt-3 opacity-80">Subscribe to the <span class="inline-flex items-center rounded-full bg-gray-50 px-2 py-1 text-sm font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">{{ tag }}</span>
+  <a href="{{meta.siteUrl}}/feeds/{{tag | slugify}}-feed.xml" class="underline">RSS feed</a>
+</p>
 
 <ol reversed class="mt-4 md:mt-6 space-y-6">
   {% for post in collections[tag] | reverse %}
@@ -35,3 +36,6 @@ permalink: /tags/{{ tag | slugify }}/
     </li>
   {% endfor %}
   <ol>
+
+    <p class="mt-4">View <a href="/tags" class="underline">all tags</a>
+    </p>
