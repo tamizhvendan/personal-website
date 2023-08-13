@@ -24,29 +24,60 @@ layout: base
 </div>
 
 <section class="mt-4 md:mt-8 lg:mt-12">
-  <h2>Books</h2>
-  <div class="flex flex-col lg:grid lg:grid-cols-2 lg:gap-2 lg:w-full">
-    <div class="mt-4 md:mt-6 lg:mt-8">
-      <div class="flex">
-        <img class="w-24 h-26 md:w-32 md:h-40 lg:w-40 lg:h-60 rounded shadow object-contain" src="/assets/images/book/fs-applied.jpeg" alt="F# Applied Book Cover"/>
-        <div class="ml-2 md:ml-6">
-          <a href="/book/FsApplied" class="underline">
-            <h3>F# Applied <span class="ml-1 opacity-70 text-sm">(Jun 2016)</span></h3>
-          </a>
-          <p class="opacity-80 text-sm md:text-base mt-2">A Practical Guide for Web Development in F# using Suave</p>
+  <h2 id="open-source">Open Source</h2>
+  <div class="flex flex-col lg:grid lg:grid-cols-2 gap-4 lg:w-full mt-4 md:mt-6 lg:mt-8">
+    <div class="overflow-hidden border border-gray-200 sm:rounded-lg px-4 py-5 sm:p-6">
+      <a href="https://github.com/graphqlize/honeyeql" class="underline">HoneyEQL</a>
+      <p class="mt-2 md:mt-3 opacity-80 text-sm">HoneyEQL is a Clojure library enables you to query database using the EDN Query Language.</p>
+    </div>
+    <div class="overflow-hidden border border-gray-200 sm:rounded-lg px-4 py-5 sm:p-6">
+      <a href="https://github.com/demystifyfp/FsToolkit.ErrorHandling" class="underline">FsToolkit.ErrorHandling</a>
+      <p class="mt-2 md:mt-3 opacity-80 text-sm">An opinionated F# Library for error handling.</p>
+    </div>
+    <div class="overflow-hidden border border-gray-200 sm:rounded-lg px-4 py-5 sm:p-6">
+      <a href="https://github.com/demystifyfp/FsConfig" class="underline">FsConfig</a>
+      <p class="mt-2 md:mt-3 opacity-80 text-sm">FsConfig is a F# library for reading configuration data from environment variables and AppSettings with type safety.</p>
+    </div>
+  </section>
+
+  <section class="mt-4 md:mt-8 lg:mt-12">
+    <h2 id="products">Products</h2>
+    <div class="flex flex-col lg:grid lg:grid-cols-2 gap-4 lg:w-full mt-4 md:mt-6 lg:mt-8">
+      <div class="overflow-hidden border border-gray-200 sm:rounded-lg px-4 py-5 sm:p-6">
+        <a href="https://www.learncsintamil.com" class="underline">Learn CS in Tamil</a>
+        <p class="mt-2 md:mt-3 opacity-80 text-sm">Screencast tutorials to help people learn Computer Science & Software Development in my mother tongue Tamil.</p>
+      </div>
+      <div class="overflow-hidden border border-gray-200 sm:rounded-lg px-4 py-5 sm:p-6">
+        <a href="https://www.kalvify.com" class="underline">Kalvify</a>
+        <p class="mt-2 md:mt-3 opacity-80 text-sm">Empowering educators & creators to turn their knowledge into wealth.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="mt-4 md:mt-8 lg:mt-12">
+    <h2 id="books">Books</h2>
+    <div class="flex flex-col lg:grid lg:grid-cols-2 lg:gap-4 lg:w-full">
+      <div class="mt-4 md:mt-6 lg:mt-8">
+        <div class="flex">
+          <img loading="lazy" class="w-24 h-26 md:w-32 md:h-40 lg:w-40 lg:h-60 rounded shadow object-contain" src="/assets/images/book/fs-applied.jpeg" alt="F# Applied Book Cover"/>
+          <div class="ml-2 md:ml-6">
+            <a href="/book/FsApplied" class="underline">
+              <h3>F# Applied <span class="ml-1 opacity-70 text-sm">(Jun 2016)</span></h3>
+            </a>
+            <p class="opacity-80 text-sm md:text-base mt-2">A Practical Guide for Web Development in F# using Suave</p>
+          </div>
+        </div>
+      </div>
+      <div class="mt-4 md:mt-6 lg:mt-8">
+        <div class="flex">
+          <img loading="lazy" class="w-24 h-26 md:w-32 md:h-40 lg:w-40 lg:h-60 rounded shadow object-contain" src="/assets/images/book/fs-applied-ii.jpeg" alt="F# Applied Book Cover"/>
+          <div class="ml-2 md:ml-6">
+            <a href="/book/FsApplied2" class="underline">
+              <h3>F# Applied II<span class="ml-1 opacity-70 text-sm">(Jan 2018)</span></h3>
+            </a>
+            <p class="opacity-80 text-sm md:text-base mt-2">A Practical Guide to learn how to build a real-world, production-ready, end-to-end web application in F# using the functional programming principles</p>
+          </div>
         </div>
       </div>
     </div>
-    <div class="mt-4 md:mt-6 lg:mt-8">
-      <div class="flex">
-        <img class="w-24 h-26 md:w-32 md:h-40 lg:w-40 lg:h-60 rounded shadow object-contain" src="/assets/images/book/fs-applied-ii.jpeg" alt="F# Applied Book Cover"/>
-        <div class="ml-2 md:ml-6">
-          <a href="/book/FsApplied2" class="underline">
-            <h3>F# Applied II<span class="ml-1 opacity-70 text-sm">(Jan 2018)</span></h3>
-          </a>
-          <p class="opacity-80 text-sm md:text-base mt-2">A Practical Guide to learn how to build a real-world, production-ready, end-to-end web application in F# using the functional programming principles</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
