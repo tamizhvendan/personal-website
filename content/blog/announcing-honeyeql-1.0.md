@@ -5,7 +5,7 @@ tags: ['blog', 'clojure', 'open-source', 'postgres']
 description: "HoneyEQL is a Clojure library that enables you to query the database declaratively using the EDN Query Language(EQL). It aims to simplify the effort required to work with relational databases in Clojure."
 ---
 
-I am super excited to announce the official `1.0` version of the open-source library [HoneyEQL](https://github.com/tamizhvendan/honeyeql) that I have been working on for the past three years. It's all [started](https://github.com/tamizhvendan/honeyeql/commit/b925247e87ba868857c8ad1e8b7ecdfa9ed21fc4) with a small dream of simplifying the database access story in Clojure, my go-to language for the past six-plus years.  
+I am super excited to announce the official `1.0` version of the open-source library [HoneyEQL](https://github.com/tamizhvendan/honeyeql) that I have been working on for the past three years. It all [started](https://github.com/tamizhvendan/honeyeql/commit/b925247e87ba868857c8ad1e8b7ecdfa9ed21fc4) with a small dream of simplifying the database access story in Clojure, my go-to language for the past six-plus years.  
 
 ## Why HoneyEQL?
 
