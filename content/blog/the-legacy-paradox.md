@@ -31,7 +31,7 @@ To quote one more final example, a another tweleve years old codebase had a very
 
 Like most of the terms in Software Development, the term "Legacy Codebase" means different things to different people. It is difficult to arrive at a universal definition that everyone will agree on. So, let me define it in terms of the characteristics of a non-legacy code
 
-## Characteristics of a Non Legacy Codebase
+## Characteristics of a Non-Legacy Codebase
 
 ### Feedback Mechanism
 
@@ -41,8 +41,10 @@ Most of the time, Software development is all about making changes to an existin
 2. Does it breaks any existing functionality?
 3. Are there any [second order effects](https://personalmba.com/second-order-effects) because of this change?
 
-This feedback should be reliable and faster. Typically we achive this in the form of tests. Absence of this feedback is equivalent to shooting in the dark. That's why Michael Feathers emphasised the importance of test. 
+In a non-legacy codebase, this feedback mechanism is reliable and faster. Typically we achive this in the form of tests. Absence of this feedback is equivalent to shooting in the dark. That's why Michael Feathers emphasised the importance of test. 
+
+The tool (test) that powers this feedback, continue to evolve with the changes so that it stays nimble and reliable.  
 
 ### Ease of change
 
-
+When someone reported a bug, how quickly someone figures out 

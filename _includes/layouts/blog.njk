@@ -1,7 +1,7 @@
 ---
 layout: base
 ---
-<article class="mx-auto max-w-4xl">
+<article class="mx-auto max-w-3xl">
   <div class="">
     <h1 class="text-center leading-normal">{{title}}</h1>
     <div class="flex space-x-1 text-sm mt-3 items-center justify-center w-full opacity-70">
@@ -33,17 +33,36 @@ layout: base
 
 <div class="max-w-xl mx-auto">
   <hr class="my-4 md:my-6 lg:my-8"/>
-
-  <p class="text-center text-lg max-w-lg">
+  {%- if linkedin or twitter or ycombinator -%}
+    <p class="mb-4 md:mb-6 text-center">Like, Share or Discuss on 
+      {% if linkedin %}
+        <a class="underline" href="{linkedin}">LinkedIn</a>
+      {% endif %}
+      {% if twitter %}
+        <span> , </span>
+        <a class="underline" href="{twitter}">Twitter</a>
+      {% endif %}
+      {% if ycombinator %}
+        <span> , </span>
+        <a class="underline" href="{ycombinator}">Hacker News</a>
+      {% endif %}
+    </p>
+  {%- endif -%}
+  <p class="mb-4 md:mb-6 text-center">
   Did the content capture your interest? Stay in the loop by subscribing to the <a class="underline" href="/feed.xml">RSS feed</a> and staying informed!
-<p></div>
+</p>
+  <div class="flex items-center justify-center">
+    <a href="https://notbyai.fyi"><img src="/assets/images/written-by-human.svg"/></a>
+  </div>
+  <hr class="my-4 md:my-6 lg:my-8"/>
+</div>
 
-    <div class="my-4 md:my-6 lg:my-8">
-      <script src="https://utteranc.es/client.js"
+<div class="my-4 md:my-6 lg:my-8">
+  <script src="https://utteranc.es/client.js"
           repo="tamizhvendan/personal-website"
           issue-term="title"
           label="comment"
           theme="github-light"
           crossorigin="anonymous"
           async></script>
-    </div>
+</div>
