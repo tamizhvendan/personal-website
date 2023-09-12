@@ -3,7 +3,8 @@ title: "Beyond the Buzz: The Unseen Challenges of Adopting Big Tech's Engineerin
 date: 2023-09-12
 tags: ['blog', 'craftsmanship']
 linkedin: https://www.linkedin.com/feed/update/urn:li:activity:7107203282586009603/
-
+twitter: https://twitter.com/tamizhvendan/status/1701448099368161420
+ycombinator: https://news.ycombinator.com/item?id=37476868
 ---
 
 One standard advice in social media is to ask people to follow Big Tech companies' blog posts and treat them as a source of wisdom.
