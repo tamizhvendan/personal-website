@@ -2,10 +2,10 @@
 title: "Rewiring your hiring process - Part 1"
 date: 2023-09-17
 tags: ['blog', "craftsmanship", "org-building", "hiring"]
-description: We know that there are two hard things in Software - cache invalidation and naming things. From my experience, there is a third hard thing, which is as hard as others. It is hiring. To be more precise, it is hiring the right person. 
-ycombinator: https://news.ycombinator.com/item?id=37541303
-twitter: https://twitter.com/tamizhvendan/status/1703252820101890224
 linkedin: https://www.linkedin.com/posts/tamizhvendan_rewiring-your-hiring-process-part-1-activity-7109017782326882306-dGrt/
+twitter: https://twitter.com/tamizhvendan/status/1703252820101890224
+ycombinator: https://news.ycombinator.com/item?id=37541303
+description: We know that there are two hard things in Software - cache invalidation and naming things. From my experience, there is a third hard thing, which is as hard as others. It is hiring. To be more precise, it is hiring the right person. 
 ---
 
 We know that there are [two hard things](https://martinfowler.com/bliki/TwoHardThings.html) in Software - cache invalidation and naming things. From my experience, there is a third hard thing, which is as hard as others. It is hiring. To be more precise, it is hiring the right person. 

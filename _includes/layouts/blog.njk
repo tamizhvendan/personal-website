@@ -36,15 +36,15 @@ layout: base
   {%- if linkedin or twitter or ycombinator -%}
     <p class="mb-4 md:mb-6 text-center">Like, Share or Discuss on 
       {% if linkedin %}
-        <a class="underline" href="{linkedin}">LinkedIn</a>
+        <a class="underline" href="{{linkedin}}">LinkedIn</a>
       {% endif %}
       {% if twitter %}
         <span> , </span>
-        <a class="underline" href="{twitter}">Twitter</a>
+        <a class="underline" href="{{twitter}}">Twitter</a>
       {% endif %}
       {% if ycombinator %}
         <span> , </span>
-        <a class="underline" href="{ycombinator}">Hacker News</a>
+        <a class="underline" href="{{ycombinator}}">Hacker News</a>
       {% endif %}
     </p>
   {%- endif -%}
