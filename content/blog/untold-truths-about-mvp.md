@@ -2,7 +2,10 @@
 title: "The Untold Truths About MVP"
 date: 2023-09-22
 tags: ['blog', 'entrepreneurship', 'mvp']
-
+description: One of the buzzing jargon that is quite popular in the startup communities in software development is MVP(Minimum viable product). Like most other jargon in the software industry, everyone has their definitions of it. Some people and organizations manipulate it to their advantage.
+linkedin: https://www.linkedin.com/posts/tamizhvendan_the-untold-truths-about-mvp-activity-7110821764351332352-PlFo
+twitter: https://twitter.com/tamizhvendan/status/1705056557044764680
+ycombinator: https://news.ycombinator.com/item?id=37607379
 ---
 
 One of the buzzing jargon that is quite popular in the startup communities in software development is [MVP(Minimum viable product)](https://en.wikipedia.org/wiki/Minimum_viable_product). Like most other jargon in the software industry, everyone has their definitions of it. Some people and organizations manipulate it to their advantage.
