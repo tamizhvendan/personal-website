@@ -3,7 +3,8 @@ title: "From Top to Bottom: Reimagining Performance Appraisals"
 date: 2023-09-25
 tags: ['blog', "org-building"]
 description: The performance appraisal process in most organizations requires revamping for the better. It always creates a waiting for exam results feeling and mostly ends as a disappointment for most employees.
-
+linkedin: https://www.linkedin.com/posts/tamizhvendan_from-top-to-bottom-reimagining-performance-activity-7111920089834164224-r0jk/
+twitter: https://twitter.com/tamizhvendan/status/1706155122999328838
 ---
 
 In my last blog article on "[Rewiring your hiring process](/blog/rewiring-your-hiring-process-part-1)," I advocated that the hiring manager write a self-appraisal document for their new hires to validate whether they need a new hire in the first place and decide how their success would look.
