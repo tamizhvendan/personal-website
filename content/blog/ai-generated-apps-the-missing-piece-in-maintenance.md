@@ -2,6 +2,8 @@
 title: "AI-Generated Apps: The Missing Piece in Maintenance"
 date: 2023-10-25
 tags: ['blog', 'craftsmanship']
+linkedin: https://www.linkedin.com/posts/tamizhvendan_there-is-a-lot-of-buzz-around-using-ai-to-activity-7122425053417242624-6zEw
+twitter: https://twitter.com/tamizhvendan/status/1717545857354957277 
 ---
 
 There is a lot of buzz around using AI to create software products. Here is a hard truth that one should know before getting influenced by this AI motion.
