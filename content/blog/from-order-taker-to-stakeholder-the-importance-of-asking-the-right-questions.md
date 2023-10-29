@@ -2,7 +2,7 @@
 title: "From Order-Taker to Stakeholder: The Importance of Asking the Right Questions"
 date: 2023-10-29
 tags: ['blog', 'craftsmanship', 'product-management']
-
+description: Developers often develop software by taking the requirements mindlessly and working based on the order-taking mindset. In this article, I share my views on why they need to come out from this mindset and start approaching this problem as a collaborator and start asking the right questions. 
 ---
 
 A developer's job is more than just translating the requirements into a computer program. They should be going one level deep and figuring out why we have these requirements in the first place.
