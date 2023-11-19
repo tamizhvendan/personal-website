@@ -3,6 +3,8 @@ title: "Why I am not using AI tools for Coding"
 date: 2023-11-09
 tags: ['blog', 'craftsmanship']
 description: Developers relying on AI for instant answers may miss out on the valuable learning experience of searching for alternative solutions, hindering their overall growth.
+linkedin: https://www.linkedin.com/posts/tamizhvendan_why-i-am-not-using-ai-tools-for-coding-activity-7131845242361679872-vQ2I
+twitter: https://twitter.com/tamizhvendan/status/1726079846244319488
 ---
 
 There is a beautiful sentence from a Tamil Movie song.
