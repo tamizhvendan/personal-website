@@ -3,6 +3,8 @@ title: Happy New You
 date: 2023-12-31
 tags: ['blog', 'craftsmanship']
 description: Have you ever thought about why you cannot achieve your year-end resolutions most of the time? Seeking an answer to this question led me to six more questions, and the answers to them changed my life for the better.
+twitter: https://twitter.com/tamizhvendan/status/1741489639679246367
+linkedin: https://www.linkedin.com/posts/tamizhvendan_happy-new-you-activity-7147248879971778560-eMSu
 ---
 
 As the new year is about to dawn, most of us are all set to work out our yearend routine - picking up new resolutions with the belief that we can make it work this time. Some of us might have decided it would not work out as it has in past years and, hence, chose not to pick anything as a resolution. I have been there and done that. I feel you. I don't want to bore you with another inspirational blog post; instead, I will share something that worked for me. The objective of this post is to kindle a different perspective or a thought process that may help you. Let's jump in.
