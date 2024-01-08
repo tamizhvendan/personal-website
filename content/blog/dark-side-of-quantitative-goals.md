@@ -3,6 +3,8 @@ title: Dark Side Of Quantitative Goals
 date: 2024-01-08
 tags: ['blog', 'craftsmanship']
 description: A short tale of self-realization and how it improved the quality of my life.
+linkedin: https://www.linkedin.com/posts/tamizhvendan_dark-side-of-quantitative-goals-activity-7149981259102924800-JxKU
+twitter: https://twitter.com/tamizhvendan/status/1744215742411858101
 ---
 
 "My goal for this year is to read ten books." 
