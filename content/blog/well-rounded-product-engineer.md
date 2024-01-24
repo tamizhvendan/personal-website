@@ -3,6 +3,8 @@ title: Well-rounded Product Engineer
 date: 2024-01-24
 tags: ['blog', 'craftsmanship']
 description: From diving headfirst into solutions to navigating complexities, my journey as an engineer has been transformative. Started with hands-on problem-solving, then delved deep into tech nuances. Now, embracing a holistic approach—balancing practicality, deep understanding, and user-centricity. Discovering the real purpose behind writing code and the game-changing shift in my career focus.
+linkedin: https://www.linkedin.com/posts/tamizhvendan_new-blog-post-well-rounded-product-engineer-activity-7155852188634828801-T9Rk
+twitter: https://twitter.com/tamizhvendan/status/1750086931210441170
 ---
 
 I came across [this Linkedin post](https://www.linkedin.com/posts/sudippost_softwareengineering-programming-abstraction-activity-7155546176065282048-2tQK) where the author emphasizes the approaches of the two types of engineers when integrating a web socket into an application: one focuses on practical implementation, while the other delves deeper into underlying complexities. It suggests that both approaches are valid but highlight the value of understanding hidden complexities in software engineering without being intimidated by them.
@@ -33,7 +35,7 @@ I became a victim of [Confirmation Bias](https://en.wikipedia.org/wiki/Confirmat
 
 If I was doing this as part of my deliberate learning, there is nothing wrong. But doing the same at my job is a million-dollar mistake. This realization kickstarted my "Type 3" journey. 
 
-Back to the "Web Socket" socket that the author quoted, If a "Type 3" engineer has asked to do a "Web Socket" integration, this is how they respond.
+Back to the "Web Socket" example that the author quoted, If a "Type 3" engineer has asked to do a "Web Socket" integration, this is how they respond.
 
 1. They start by [asking the right questions](/blog/from-order-taker-to-stakeholder-the-importance-of-asking-the-right-questions) and get to the crux of the user's problem that we address. 
 2. Then, they apply their critical thinking to find ways to rephrase the problem statement to simplify the solution.  They try hard [not to solve hard problems](https://world.hey.com/dhh/try-hard-not-to-solve-hard-problems-9e6550a2).
