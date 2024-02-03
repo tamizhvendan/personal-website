@@ -2,6 +2,8 @@
 title: "Are you truly agile?"
 date: 2024-02-03
 tags: ['blog']
+linkedin: "https://www.linkedin.com/posts/tamizhvendan_are-you-truly-agile-activity-7159383797493329920-7d1l"
+twitter: https://twitter.com/tamizhvendan/status/1753618936065868248
 ---
 
 The current state of the agile methodology in software development reminds me of the Chinese whisper game. 
