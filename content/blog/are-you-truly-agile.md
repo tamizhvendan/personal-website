@@ -18,7 +18,7 @@ Unfortunately, we lost this core message in reality.
 
 Now, if we ask people what agile is, we get answers like - running a backlog "grooming" at the beginning of a "sprint," providing "estimates" for the "JIRA issues," then running a "standup" daily, and finally doing "retrospective" after the end of the sprint.
 
-Some people may argue that it isn't agile. I empathize with them. They are right because that's the message they received from the previous person. But just like the Chinese whisper game, the real meaning of "agile" got lost in the process.
+Some people may argue that isn't it agile. I empathize with them. They are right because that's the message they received from the previous person. But just like the Chinese whisper game, the real meaning of "agile" got lost in the process.
 
 This blog post aims to bring back the awareness of the "first message" of what agile is.
 
