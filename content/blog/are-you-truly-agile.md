@@ -22,4 +22,4 @@ Some people may argue that isn't it agile. I empathize with them. They are right
 
 This blog post aims to bring back the awareness of the "first message" of what agile is.
 
-I want you to immerse yourself and internalize what is mentioned on [this page](https://agilemanifesto.org/principles.html) about agile methodology principles.
+I want you to immerse yourself and internalize what is mentioned on [this page](https://agilemanifesto.org/principles.html) about the principles of the agile methodology.
