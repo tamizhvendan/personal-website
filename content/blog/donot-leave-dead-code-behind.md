@@ -1,5 +1,5 @@
 ---
-title: Don't leave dead code behind
+title: Don't leave the dead code behind
 date: 2024-03-08
 tags: ['blog', 'clean-code', 'craftsmanship']
 ogImage: "/assets/images/blog/dont-leave-dead-code-behind.jpeg"
