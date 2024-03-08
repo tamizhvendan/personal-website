@@ -3,6 +3,8 @@ title: Don't leave the dead code behind
 date: 2024-03-08
 tags: ['blog', 'clean-code', 'craftsmanship']
 ogImage: "/assets/images/blog/dont-leave-dead-code-behind.jpeg"
+linkedin: https://www.linkedin.com/posts/tamizhvendan_dont-leave-the-dead-code-behind-activity-7171869256018563072-io6E
+twitter: https://twitter.com/tamizhvendan/status/1766104089312522519
 ---
 
 In software product development, we often remove or update a feature. This practice is widespread in early-stage companies to determine the product's market fit or positioning. 
