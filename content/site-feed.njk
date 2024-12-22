@@ -16,7 +16,7 @@ permalink: feed.xml
         <link>{{ meta.siteUrl }}{{ post.url }}</link>
         <pubDate>{{ post.date | dateToRfc822 }}</pubDate>
         <dc:creator>{{ meta.author.name }}</dc:creator>
-        <guid>{{ meta.siteUrl }}{{ page.url }}</guid>
+        <guid>{{ meta.siteUrl }}{{ post.url }}</guid>
       </item>
     {%- endfor %}
   </channel>
