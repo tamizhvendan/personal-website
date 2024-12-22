@@ -2,6 +2,9 @@
 title: Developer Productivity - Part 1 
 date: 2024-12-16
 tags: ['blog', 'craftsmanship']
+linkedin: https://www.linkedin.com/posts/tamizhvendan_blog-post-httpslnkdingfb2kzqe-activity-7274615089553424384-VU1H
+twitter: https://x.com/tamizhvendan/status/1868979840566874289
+description: The code is not the goal. Solving the problem is!
 ---
 
 > [productivity](https://dictionary.cambridge.org/dictionary/english/productivity) *noun* - the rate at which a person, company, or country does useful work.
