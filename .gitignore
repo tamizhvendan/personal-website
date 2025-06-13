@@ -105,3 +105,4 @@ dist
 _tmp
 
 .DS_Store
+.tool-versions
