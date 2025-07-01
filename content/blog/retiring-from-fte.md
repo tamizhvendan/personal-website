@@ -6,6 +6,8 @@ description: "After 16 years in full-time software roles, I'm stepping away to e
 ogImage: "/assets/images/blog/retiring-from-fte/retirement-from-fte.png"
 ---
 
+> This blog post is the English transcript version of my Tamil [podcast episode](https://open.spotify.com/episode/4yVdc5CJlYLEUlw7mM7glj?si=78b8ce9102324b1a) on the same topic. 
+
 Software development and cricket have always had a symbiotic relationship in my life, each shaping and strengthening the other. The confidence I built by facing different opponents in varying conditions helped me dive into diverse business domains and work across eleven different programming language stacks. Over the years, I've had the joy (and sometimes pain) of working in languages as varied as Golang, Kotlin, F#, Clojure, Haskell, Elm, Scala, Python, JavaScript, Swift, and Java.
 
 For my cricket teams, I've always been the Swiss Army knife. I bowl both medium-fast and spin, bat anywhere from the top to the middle order, keep wickets, and field reliably. In short, I'm always willing to do whatever the team needs, depending on the match situation. I've built my software career on the same principle. From sales to coding, gathering product requirements from customers to leading the team, I jump in wherever I'm needed!
